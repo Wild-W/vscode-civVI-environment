@@ -3,7 +3,7 @@
 	"displayName": "Civilization VI Environment Emulation",
 	"publisher": "WildW",
 	"icon": "images/logoSquare.png",
-	"description": "Atomontage API autocomplete for VS Code.",
+	"description": "Autocomplete for Civilization VI modding (currently only lua)",
 	"version": "0.0.1",
 	"keywords": [
 		"EmmyLua",
