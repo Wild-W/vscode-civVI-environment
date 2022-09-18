@@ -27,7 +27,7 @@
 	"main": "./out/extension.js",
 	"repository": {
 		"type": "git",
-		"url": "https://TODO"
+		"url": "https://github.com/Wild-W/vscode-civVI-environment-master"
 	},
 	"extensionDependencies": [
 		"sumneko.lua"
