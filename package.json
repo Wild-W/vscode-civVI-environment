@@ -4,7 +4,7 @@
 	"publisher": "WildW",
 	"icon": "images/logoSquare.png",
 	"description": "Autocomplete for Civilization VI modding (currently only lua)",
-	"version": "0.0.1",
+	"version": "1.1.0",
 	"keywords": [
 		"EmmyLua",
 		"IntelliSense",
