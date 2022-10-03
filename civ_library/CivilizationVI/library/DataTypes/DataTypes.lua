@@ -13,3 +13,4 @@
 ---@alias float number
 
 ---@alias object table
+---@alias ifunction function

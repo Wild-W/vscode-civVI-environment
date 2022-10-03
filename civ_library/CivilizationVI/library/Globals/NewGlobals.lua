@@ -1,5 +1,6 @@
 ---@meta
 
+
 function StrategicView_ClearReferenceMap() end
 ---@param referenceMap string
 function StrategicView_SetReferenceMap(referenceMap) end

@@ -30,6 +30,7 @@ function setExternalLibrary(folder: string, enable: boolean) {
 			}
 		}
 		config.update("workspace.library", library, true);
+		config.update("runtime.plugin", extensionPath + "\\" + "civ_library\\CivilizationVI\\plugin.lua", true);
 		config.update("runtime.version", "Lua 5.1", true);
 		config.update("runtime.builtin.io", "disable", true);
 		config.update("runtime.builtin.debug", "disable", true);
