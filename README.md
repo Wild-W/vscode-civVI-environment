@@ -8,6 +8,7 @@ Autocompletions for Civ VI classes, properties, functions and parameters.
 Depends on [Lua Language Server](https://marketplace.visualstudio.com/items?itemName=sumneko.lua) to provide [IntelliSense](https://code.visualstudio.com/docs/editor/intellisense) for Lua.
 
 ![feature X](images/example.gif)
+![feature Y](images/example_havokscript.png)
 
 **Lua**
 
