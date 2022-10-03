@@ -1,0 +1,15 @@
+snippet `(Events|LuaEvents|GameEvents)\.(\w+)(\.Add)\s*\(` "Event boilerplate"
+function ${1:On``rv = m[2]``}($2)
+	$0
+end
+
+``rv = m[1]``.``rv = m[2]``.Add(${1:On``rv = m[2]``}
+endsnippet
+
+snippet `function Init(ialize)?\s*\(?` "Initialize boilerplate"
+function Initialize()
+	$0
+end
+
+Initialize(
+endsnippet
