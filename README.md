@@ -22,9 +22,9 @@ Depends on [Lua Language Server](https://marketplace.visualstudio.com/items?item
     - [x] LuaEvents
     - [x] GameEvents
 - [x] Extraneous globals
-- [ ] HavokScript Syntax
-    - [ ] hstructure/hmake
-    - [ ] Type qualifiers
+- [x] HavokScript Syntax (rough but it works nearly entirely)
+    - [x] hstructure/hmake
+    - [x] Type qualifiers
 - [ ] Modules
 - [ ] __call metamethod
     - [ ] GameInfo
