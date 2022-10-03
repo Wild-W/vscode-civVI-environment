@@ -32,6 +32,10 @@ Depends on [Lua Language Server](https://marketplace.visualstudio.com/items?item
     - [x] Events
     - [x] LuaEvents
 
+## Recommendations
+
+* [Hypersnips](https://marketplace.visualstudio.com/items?itemName=draivin.hsnips) (Some of the added snippets need this to work)
+
 ## Requirements
 
 * [Lua Language Server](https://marketplace.visualstudio.com/items?itemName=sumneko.lua)
