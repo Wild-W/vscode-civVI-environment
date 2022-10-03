@@ -7,6 +7,7 @@ function setExternalLibrary(folder: string, enable: boolean) {
 	const extensionPath = vscode.extensions.getExtension(extensionId)?.extensionPath;
 	const folderPath = extensionPath + "\\" + folder;
 	const config = vscode.workspace.getConfiguration("Lua");
+	const hsnipsConf = vscode.workspace.getConfiguration("hsnips");
 	const library: string[] | undefined = config.get("workspace.library");
 	if (library && extensionPath) {
 		// remove any older versions of our path e.g. "publisher.name-0.0.1"
@@ -37,6 +38,7 @@ function setExternalLibrary(folder: string, enable: boolean) {
 		config.update("type.castNumberToInteger", true, true);
 		config.update("workspace.checkThirdParty", false, true);
 		config.update("diagnostics.disable", ["lowercase-global"], true);
+		hsnipsConf.update("hsnipsPath", extensionPath + "\\" + "snippets", true);
 	}
 }
 
