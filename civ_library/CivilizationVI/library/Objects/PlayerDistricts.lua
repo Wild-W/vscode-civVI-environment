@@ -16,7 +16,7 @@ function PlayerDistricts:FindID() end
 ---
 ---*Query*
 function PlayerDistricts:GetCount() end
----**Contexts:** Gameplay
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
 function PlayerDistricts:Members() end

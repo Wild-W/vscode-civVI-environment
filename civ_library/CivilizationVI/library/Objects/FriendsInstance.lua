@@ -11,7 +11,7 @@ FriendsInstance.TypeName = "FriendsInstance"
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function FriendsInstance.IsOverlayEnabled() end
 ---**Contexts:** UI
 ---
@@ -32,8 +32,8 @@ function FriendsInstance.ActivateGameOverlay() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@param friendIndex number
----@return {ID: number, IsOnline: boolean, IsHosting: boolean, PlayerName: string} friendInfo
+---@param friendIndex number 
+---@return {ID: number, IsOnline: boolean, IsHosting: boolean, PlayerName: string} friendInfo 
 function FriendsInstance.GetFriendByIndex(friendIndex) end
 ---**Contexts:** UI
 ---

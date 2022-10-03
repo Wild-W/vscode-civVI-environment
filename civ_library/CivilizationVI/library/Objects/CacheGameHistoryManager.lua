@@ -11,37 +11,37 @@ CacheGameHistoryManager.TypeName = "CacheGameHistoryManager"
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function CacheGameHistoryManager.HasPrideMoments() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return number amount
+---@return number amount 
 function CacheGameHistoryManager.GetMomentCount() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@param playerID number
----@param interestLevel number
----@return table moments
+---@param playerID number 
+---@param interestLevel number 
+---@return table moments 
 function CacheGameHistoryManager.GetAllMomentsData(playerID, interestLevel) end
 ---**Contexts:** UI
 ---
 ---*Query*
----@param momentID number
----@return table momentData
+---@param momentID number 
+---@return table momentData 
 function CacheGameHistoryManager.GetMomentData(momentID) end
 ---**Contexts:** UI
 ---
 ---*Query*
----@param momentID number
----@return string momentType
+---@param momentID number 
+---@return string momentType 
 function CacheGameHistoryManager.GetMomentType(momentID) end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return string path
----@return string fileName
+---@return string path 
+---@return string fileName 
 function CacheGameHistoryManager.WritePrideMomentInfo() end
 
 z_dontRef_types.CacheGameHistoryManager = CacheGameHistoryManager

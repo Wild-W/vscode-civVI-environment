@@ -1,116 +1,116 @@
 ---@meta
 
 
----**Contexts:** Gameplay
+---**Contexts:** UI
 ---@class District
 local District = {}
 ---@type table<userdata, table>
 District.__instances = {}
 ---Name of the object's class; differs between UI and Gameplay context
 District.TypeName = "District"
----**Contexts:** Gameplay, UI
+---**Contexts:** UI
 ---
 ---*Query*
----@return number slots
+---@return number slots 
 function District:GetAirSlots() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return table airUnits
+---@return table airUnits 
 function District:GetAirUnits() end
----**Contexts:** Gameplay, UI
+---**Contexts:** UI
 ---
 ---*Query*
----@return number strength
+---@return number strength 
 function District:GetAttackStrength() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return number strength
+---@return number strength 
 function District:GetBaseDefenseStrength() end
----**Contexts:** UI
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return City City
+---@return City City 
 function District:GetCity() end
 ---**Contexts:** UI
 ---
 ---*Query*
 function District:GetComponentID() end
----**Contexts:** UI
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@param defenseType DefenseTypes
----@return number damage
+---@param defenseType DefenseTypes 
+---@return number damage 
 function District:GetDamage(defenseType) end
----**Contexts:** Gameplay
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return number strength
+---@return number strength 
 function District:GetDefenseStrength() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return number entertainment
+---@return number entertainment 
 function District:GetExtraRegionalEntertainment() end
+---**Contexts:** UI
+---
+---*Query*
+---@return number range 
+function District:GetExtraRegionalRange() end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return number range
-function District:GetExtraRegionalRange() end
----**Contexts:** Gameplay
----
----*Query*
----@return number districtID
+---@return number districtID 
 function District:GetID() end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@param defenseType DefenseTypes
----@return number damage
+---@param defenseType DefenseTypes 
+---@return number damage 
 function District:GetMaxDamage(defenseType) end
----**Contexts:** UI
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return Player Player
+---@return Player Player 
 function District:GetOwner() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return number rate
+---@return number rate 
 function District:GetReligionHealRate() end
----**Contexts:** UI
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return string type
+---@return string type 
 function District:GetType() end
----**Contexts:** UI
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return number X
+---@return number x 
 function District:GetX() end
----**Contexts:** UI
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return number Y
+---@return number y 
 function District:GetY() end
----**Contexts:** UI
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@param yieldType YieldTypes
----@return number yield
+---@param yieldType YieldTypes 
+---@return number yield 
 function District:GetYield(yieldType) end
----**Contexts:** UI
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function District:IsComplete() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function District:IsUnderSiege() end
----**Contexts:** UI
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
 function District:GetLocation() end
@@ -122,10 +122,10 @@ function District:GetAdjacencyYield() end
 ---
 ---*Query*
 function District:CanAttack() end
----**Contexts:** UI
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function District:IsPillaged() end
 ---**Contexts:** UI
 ---
@@ -134,8 +134,8 @@ function District:GetAirUnitCount() end
 ---**Contexts:** Gameplay
 ---
 ---*Action*
----@param defenseType DefenseTypes
----@param damage number
+---@param defenseType DefenseTypes 
+---@param damage number 
 function District:SetDamage(defenseType, damage) end
 ---**Contexts:** Gameplay
 ---
@@ -152,6 +152,7 @@ function District:GetProperty() end
 ---**Contexts:** Gameplay
 ---
 ---*Action*
-function District:SetPillaged() end
+---@param isPillaged boolean 
+function District:SetPillaged(isPillaged) end
 
 z_dontRef_types.District = District

@@ -23,14 +23,14 @@ function TypedDataVariantParameters:GetValue() end
 ---**Contexts:** UI
 ---
 ---*Action*
----@param name string
----@return TypedDataVariant TypedDataVariant
+---@param name string 
+---@return TypedDataVariant TypedDataVariant 
 function TypedDataVariantParameters:Add(name) end
 ---**Contexts:** UI
 ---
 ---*Query*
----@param name string
----@return TypedDataVariant TypedDataVariant
+---@param name string 
+---@return TypedDataVariant TypedDataVariant 
 function TypedDataVariantParameters:Get(name) end
 
 z_dontRef_types.TypedDataVariantParameters = TypedDataVariantParameters

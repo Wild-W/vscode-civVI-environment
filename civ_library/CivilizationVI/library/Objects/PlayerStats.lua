@@ -1,7 +1,7 @@
 ---@meta
 
 
----**Contexts:** UI
+---**Contexts:** Gameplay, UI
 ---@class PlayerStats
 local PlayerStats = {}
 ---@type table<userdata, table>
@@ -11,107 +11,107 @@ PlayerStats.TypeName = "PlayerStats"
 ---**Contexts:** UI
 ---
 ---*Query*
----@return number amount
+---@return number amount 
 function PlayerStats:GetMilitaryStrength() end
----**Contexts:** UI
+---**Contexts:** Gameplay
 ---
 ---*Query*
----@return number amount
+---@return number amount 
 function PlayerStats:GetNumBeliefsInReligion() end
----**Contexts:** UI
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return number amount
+---@return number amount 
 function PlayerStats:GetNumCitiesFollowingReligion() end
----**Contexts:** UI
+---**Contexts:** Gameplay
 ---
 ---*Query*
----@return number amount
+---@return number amount 
 function PlayerStats:GetNumDistrictsFollowingReligion() end
----**Contexts:** UI
+---**Contexts:** Gameplay
 ---
 ---*Query*
----@return number amount
+---@return number amount 
 function PlayerStats:GetNumFollowers() end
----**Contexts:** UI
+---**Contexts:** Gameplay
 ---
 ---*Query*
----@return number amount
+---@return number amount 
 function PlayerStats:GetNumForeignCitiesFollowingReligion() end
----**Contexts:** UI
+---**Contexts:** Gameplay
 ---
 ---*Query*
----@return number amount
+---@return number amount 
 function PlayerStats:GetNumForeignFollowers() end
----**Contexts:** UI
+---**Contexts:** Gameplay
 ---
 ---*Query*
----@return number amount
+---@return number amount 
 function PlayerStats:GetNumMyCitiesFollowingSpecificReligion() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return number amount
+---@return number amount 
 function PlayerStats:GetNumProjectsAdvanced() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return number amount
+---@return number amount 
 function PlayerStats:GetNumTechsResearched() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return number amount
+---@return number amount 
 function PlayerStats:GetTourism() end
----**Contexts:** Gameplay
+---**Contexts:** UI
 ---
 ---*Query*
 function PlayerStats:GetTourismToolTip() end
----**Contexts:** Gameplay, UI
+---**Contexts:** Gameplay
 ---
 ---*Action*
 function PlayerStats:UpdateMaxMeleeStrengthTrained() end
----**Contexts:** Gameplay
+---**Contexts:** UI
 ---
 ---*Query*
 function PlayerStats:GetScienceVictoryPointsTotalNeeded() end
----**Contexts:** Gameplay
+---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function PlayerStats:GetHasRevivedPlayer() end
----**Contexts:** Gameplay
+---**Contexts:** UI
 ---
 ---*Query*
 function PlayerStats:GetScienceVictoryPoints() end
----**Contexts:** Gameplay
+---**Contexts:** UI
 ---
 ---*Query*
----@return number amount
+---@return number amount 
 function PlayerStats:GetNumCivicsCompleted() end
----**Contexts:** Gameplay
+---**Contexts:** UI
 ---
 ---*Query*
 function PlayerStats:GetNumBuildingsOfType() end
----**Contexts:** Gameplay
+---**Contexts:** UI
 ---
 ---*Query*
----@return number amount
+---@return number amount 
 function PlayerStats:GetDiplomaticVictoryPointsTooltip() end
----**Contexts:** Gameplay
+---**Contexts:** UI
 ---
 ---*Query*
----@return number amount
+---@return number amount 
 function PlayerStats:GetDiplomaticVictoryPoints() end
----**Contexts:** Gameplay
+---**Contexts:** UI
 ---
 ---*Query*
----@return number amount
+---@return number amount 
 function PlayerStats:GetScienceVictoryPointsPerTurn() end
----**Contexts:** Gameplay
+---**Contexts:** UI
 ---
 ---*Query*
----@return number amount
+---@return number amount 
 function PlayerStats:GetMilitaryStrengthWithoutTreasury() end
 ---**Contexts:** Gameplay
 ---
@@ -121,7 +121,7 @@ function PlayerStats:UpdateMaxBombardStrengthTrained() end
 ---
 ---*Action*
 function PlayerStats:UpdateMaxRangedStrengthTrained() end
----**Contexts:** Gameplay, UI
+---**Contexts:** Gameplay
 ---
 ---*Query*
 function PlayerStats:GetNumCitiesFollowingReligionWithWonder() end

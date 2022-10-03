@@ -8,135 +8,168 @@ local GameEras = {}
 GameEras.__instances = {}
 ---Name of the object's class; differs between UI and Gameplay context
 GameEras.TypeName = "GameEras"
----**Contexts:** UI
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return number era
+---
+---Does not work in base game.
+---@return number era 
 function GameEras:GetCurrentEra() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return number turn
+---@return number turn 
 function GameEras:GetCurrentEraMinimumEndTurn() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return number turn
+---@return number turn 
 function GameEras:GetCurrentEraMaximumEndTurn() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return number turn
+---@return number turn 
 function GameEras:GetCurrentEraStartTurn() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return number era
+---@return number era 
 function GameEras:GetFinalEra() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return number turn
+---@return number turn 
 function GameEras:GetNextEraCountdown() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@param playerID number
----@return number amount
+---@param playerID number 
+---@return number amount 
 function GameEras:GetPlayerCurrentScore(playerID) end
 ---**Contexts:** UI
 ---
 ---*Query*
----@param playerID number
----@return number amount
+---@param playerID number 
+---@return number amount 
 function GameEras:GetPlayerNumAllowedCommemorations(playerID) end
 ---**Contexts:** UI
 ---
 ---*Query*
----@param playerID number
----@return boolean
+---@param playerID number 
+---@return boolean  
 function GameEras:HasDarkAge(playerID) end
 ---**Contexts:** UI
 ---
 ---*Query*
----@param playerID number
----@return boolean
+---@param playerID number 
+---@return boolean  
 function GameEras:HasGoldenAge(playerID) end
 ---**Contexts:** Gameplay
 ---
----*Query*
----@param playerID number
----@param amount number
+---*Action*
+---@param playerID number 
+---@param amount number 
 function GameEras:ChangePlayerEraScore(playerID, amount) end
 ---**Contexts:** UI
 ---
 ---*Query*
-function GameEras:GetPlayerGoldenAgeThreshold() end
+---@param playerID number 
+---@return number amount 
+function GameEras:GetPlayerGoldenAgeThreshold(playerID) end
 ---**Contexts:** UI
 ---
 ---*Query*
-function GameEras:GetPlayerDarkAgeThresholdBreakdown() end
+---@param playerID number 
+---@return table thresholdBreakdown 
+function GameEras:GetPlayerDarkAgeThresholdBreakdown(playerID) end
 ---**Contexts:** UI
 ---
 ---*Query*
-function GameEras:GetPlayerPreviousDarkAgeThreshold() end
+---@param playerID number 
+---@return number amount 
+function GameEras:GetPlayerPreviousDarkAgeThreshold(playerID) end
 ---**Contexts:** UI
 ---
 ---*Query*
-function GameEras:GetPlayerDarkAgeThreshold() end
+---@param playerID number 
+---@return number amount 
+function GameEras:GetPlayerDarkAgeThreshold(playerID) end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
-function GameEras:IsPlayerAlwaysAllowedCommemorationQuest() end
+---@param playerID number 
+---@return boolean  
+function GameEras:IsPlayerAlwaysAllowedCommemorationQuest(playerID) end
 ---**Contexts:** UI
 ---
 ---*Query*
-function GameEras:GetPlayerGoldenAgeThresholdBreakdown() end
+---@param playerID number 
+---@return table thresholdBreakdown 
+function GameEras:GetPlayerGoldenAgeThresholdBreakdown(playerID) end
 ---**Contexts:** UI
 ---
 ---*Query*
-function GameEras:GetCurrentEraNumPlayersAsOrLessAdvanced() end
+---@param playerID number 
+---@return number amount 
+function GameEras:GetCurrentEraNumPlayersAsOrLessAdvanced(playerID) end
 ---**Contexts:** UI
 ---
 ---*Query*
-function GameEras:GetCurrentEraNumPlayersMoreAdvanced() end
+---@param playerID number 
+---@return number amount 
+function GameEras:GetCurrentEraNumPlayersMoreAdvanced(playerID) end
 ---**Contexts:** UI
 ---
 ---*Query*
-function GameEras:GetPlayerPreviousScore() end
+---@param playerID number 
+---@return number amount 
+function GameEras:GetPlayerPreviousScore(playerID) end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
-function GameEras:HasHeroicGoldenAge() end
+---@param playerID number 
+---@return boolean  
+function GameEras:HasHeroicGoldenAge(playerID) end
 ---**Contexts:** UI
 ---
 ---*Query*
-function GameEras:GetPlayerCommemorateChoices() end
+---@param playerID number 
+---@return integer[] commemorationTypes 
+function GameEras:GetPlayerCommemorateChoices(playerID) end
 ---**Contexts:** UI
 ---
 ---*Query*
-function GameEras:GetPlayerPreviousEraScoreBreakdown() end
+---@param playerID number 
+---@return table eraScoreBreakdown 
+function GameEras:GetPlayerPreviousEraScoreBreakdown(playerID) end
 ---**Contexts:** UI
 ---
 ---*Query*
-function GameEras:GetPlayerActiveCommemorations() end
+---@param playerID number 
+---@return integer[] commemorationTypes 
+function GameEras:GetPlayerActiveCommemorations(playerID) end
 ---**Contexts:** UI
 ---
 ---*Query*
-function GameEras:GetPlayerPreviousGoldenAgeThreshold() end
+---@param playerID number 
+---@return number amount 
+function GameEras:GetPlayerPreviousGoldenAgeThreshold(playerID) end
 ---**Contexts:** UI
 ---
 ---*Query*
-function GameEras:GetPlayerThresholdBaseline() end
+---@param playerID number 
+---@return number amount 
+function GameEras:GetPlayerThresholdBaseline(playerID) end
 ---**Contexts:** UI
 ---
 ---*Query*
-function GameEras:GetPlayerComplimentChoices() end
+---@param playerID number 
+function GameEras:GetPlayerComplimentChoices(playerID) end
 ---**Contexts:** UI
 ---
 ---*Query*
-function GameEras:GetPlayerCurrentEraScoreBreakdown() end
+---@param playerID number 
+---@return table eraScoreBreakdown 
+function GameEras:GetPlayerCurrentEraScoreBreakdown(playerID) end
 
 z_dontRef_types.GameEras = GameEras

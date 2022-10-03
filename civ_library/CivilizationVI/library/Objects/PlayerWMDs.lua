@@ -1,27 +1,27 @@
 ---@meta
 
 
----**Contexts:** UI
+---**Contexts:** Gameplay, UI
 ---@class PlayerWMDs
 local PlayerWMDs = {}
 ---@type table<userdata, table>
 PlayerWMDs.__instances = {}
 ---Name of the object's class; differs between UI and Gameplay context
 PlayerWMDs.TypeName = "PlayerWMDs"
----**Contexts:** UI
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function PlayerWMDs:CanDeployWMD() end
----**Contexts:** UI
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return number amount
+---@return number amount 
 function PlayerWMDs:GetWeaponCount() end
----**Contexts:** UI
+---**Contexts:** Gameplay
 ---
----*Query*
----@param amount number
+---*Action*
+---@param amount number 
 function PlayerWMDs:ChangeWeaponCount(amount) end
 
 z_dontRef_types.PlayerWMDs = PlayerWMDs

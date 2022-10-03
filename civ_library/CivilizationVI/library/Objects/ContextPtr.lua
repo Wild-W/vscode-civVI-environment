@@ -14,7 +14,7 @@ function ContextPtr:SetSizeX() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function ContextPtr:IsHidden() end
 ---**Contexts:** UI
 ---
@@ -55,7 +55,7 @@ function ContextPtr:SetInitHandler() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function ContextPtr:IsVisible() end
 ---**Contexts:** UI
 ---
@@ -132,7 +132,7 @@ function ContextPtr:SetAppLostFocusHandler() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function ContextPtr:IsHotLoad() end
 ---**Contexts:** UI
 ---
@@ -142,3 +142,35 @@ function ContextPtr:GetParentByType() end
 ---
 ---*Query*
 function ContextPtr:GetID() end
+---**Contexts:** UI
+---
+---*Action*
+function ContextPtr:ClearUpdateGamepad() end
+---**Contexts:** UI
+---
+---*Action*
+function ContextPtr:BuildInstanceForControlAtIndex() end
+---**Contexts:** UI
+---
+---*Action*
+function ContextPtr:Reload() end
+---**Contexts:** UI
+---
+---*Action*
+function ContextPtr:SetShutdownGamepad() end
+---**Contexts:** UI
+---
+---*Action*
+function ContextPtr:UnifyClickAndTap() end
+---**Contexts:** UI
+---
+---*Action*
+function ContextPtr:ClearContextParameters() end
+---**Contexts:** UI
+---
+---*Action*
+function ContextPtr:SetUpdateGamepad() end
+---**Contexts:** UI
+---
+---*Action*
+function ContextPtr:ClearPopupParameters() end

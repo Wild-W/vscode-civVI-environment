@@ -6,10 +6,10 @@ DirtyComponentsManager = {}
 ---**Contexts:** UI
 ---
 ---*Action*
----@return DirtyComponents DirtyComponents
+---@return DirtyComponents DirtyComponents 
 function DirtyComponentsManager.Create() end
 ---**Contexts:** UI
 ---
 ---*Action*
----@param DirtyComponents DirtyComponents
+---@param DirtyComponents DirtyComponents 
 function DirtyComponentsManager.Destroy(DirtyComponents) end

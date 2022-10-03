@@ -6,7 +6,7 @@ UIManager = {}
 ---**Contexts:** UI
 ---
 ---*Action*
----@param unknown boolean
+---@param unknown boolean 
 function UIManager:DisablePopupQueue(unknown) end
 ---**Contexts:** UI
 ---
@@ -23,7 +23,7 @@ function UIManager:GetControlUnderMouse() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function UIManager:IsModal() end
 ---**Contexts:** UI
 ---
@@ -56,7 +56,9 @@ function UIManager:GetNormalizedMousePos() end
 ---**Contexts:** UI
 ---
 ---*Action*
----@param message string
+---
+---Prints a message to UserInterface.log, will be truncated if too long.
+---@param message string 
 function UIManager:Log(message) end
 ---**Contexts:** UI
 ---
@@ -65,7 +67,7 @@ function UIManager:GetRootContexts() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function UIManager:IsPopupQueueDisabled() end
 ---**Contexts:** UI
 ---
@@ -98,7 +100,7 @@ function UIManager:GetPopupStack() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function UIManager:IsGamepadActive() end
 ---**Contexts:** UI
 ---
@@ -107,7 +109,7 @@ function UIManager:GetMouseOverWorld() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function UIManager:IsInPopupQueue() end
 ---**Contexts:** UI
 ---

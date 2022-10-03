@@ -1,7 +1,7 @@
 ---@meta
 
 
----**Contexts:** UI
+---**Contexts:** Gameplay, UI
 ---@class GameDiplomacy
 local GameDiplomacy = {}
 ---@type table<userdata, table>
@@ -11,35 +11,38 @@ GameDiplomacy.TypeName = "GameDiplomacy"
 ---**Contexts:** UI
 ---
 ---*Query*
----@param allianceID number
----@param allianceLevel number
----@param unknown boolean
----@return string benefits
+---@param allianceID number 
+---@param allianceLevel number 
+---@param unknown boolean 
+---@return string benefits 
 function GameDiplomacy:GetAllianceBenefitsString(allianceID, allianceLevel, unknown) end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return number turns
+---@return number turns 
 function GameDiplomacy:GetDenounceTimeLimit() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return number turns
+---@return number turns 
 function GameDiplomacy:GetMinPeaceDuration() end
----**Contexts:** UI
+---**Contexts:** Gameplay
 ---
 ---*Action*
----@param doesShare boolean
+---@param doesShare boolean 
 function GameDiplomacy:SetAlliesShareVisFlag(doesShare) end
----**Contexts:** UI
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
-function GameDiplomacy:GetGrievanceLogEntries() end
----**Contexts:** UI
+---@param player1ID number 
+---@param player2ID number 
+---@return table[] logEntries 
+function GameDiplomacy:GetGrievanceLogEntries(player1ID, player2ID) end
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
 function GameDiplomacy:GetGrievanceChangeTooltip() end
----**Contexts:** UI
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
 function GameDiplomacy:GetGrievanceChangePerTurn() end

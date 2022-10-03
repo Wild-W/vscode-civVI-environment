@@ -11,43 +11,43 @@ Citizens.TypeName = "Citizens"
 ---**Contexts:** UI
 ---
 ---*Query*
----@param yieldType YieldTypes
----@return boolean
+---@param yieldType YieldTypes 
+---@return boolean  
 function Citizens:IsDisfavoredYield(yieldType) end
 ---**Contexts:** UI
 ---
 ---*Query*
----@param yieldType YieldTypes
----@return boolean
+---@param yieldType YieldTypes 
+---@return boolean  
 function Citizens:IsFavoredYield(yieldType) end
 ---**Contexts:** UI
 ---
 ---*Query*
----@param X number
----@param Y number
----@return boolean
-function Citizens:IsPlotWorked(X, Y) end
----**Contexts:** UI
+---@param x number 
+---@param y number 
+---@return boolean  
+function Citizens:IsPlotWorked(x, y) end
+---**Contexts:** Gameplay
 ---
 ---*Action*
----@param yieldType YieldTypes
----@param isFavored boolean
----@return boolean wasSuccess
+---@param yieldType YieldTypes 
+---@param isFavored boolean 
+---@return boolean wasSuccess 
 function Citizens:SetFavoredYield(yieldType, isFavored) end
 ---**Contexts:** Gameplay
 ---
 ---*Query*
----@return YieldTypes yieldType
+---@return YieldTypes yieldType 
 function Citizens:SetDisfavoredYield() end
 ---**Contexts:** Gameplay
 ---
 ---*Query*
----@param yieldType YieldTypes
+---@param yieldType YieldTypes 
 function Citizens:IsYieldDisfavored(yieldType) end
 ---**Contexts:** Gameplay
 ---
 ---*Query*
----@param yieldType YieldTypes
+---@param yieldType YieldTypes 
 function Citizens:IsYieldFavored(yieldType) end
 
 z_dontRef_types.Citizens = Citizens

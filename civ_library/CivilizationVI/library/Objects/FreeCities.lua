@@ -11,32 +11,32 @@ FreeCities.TypeName = "FreeCities"
 ---**Contexts:** Gameplay
 ---
 ---*Query*
----@return number freeCityID
+---@return number freeCityID 
 function FreeCities:GetIndex() end
 ---**Contexts:** Gameplay
 ---
 ---*Query*
----@return {x: number, y: number} location
+---@return {x: number, y: number} location 
 function FreeCities:GetLocation() end
 ---**Contexts:** Gameplay
 ---
 ---*Query*
----@return number X
+---@return number x 
 function FreeCities:GetX() end
 ---**Contexts:** Gameplay
 ---
 ---*Query*
----@return number Y
+---@return number y 
 function FreeCities:GetY() end
 ---**Contexts:** Gameplay
 ---
 ---*Query*
----@return Plot Plot
+---@return Plot Plot 
 function FreeCities:GetPlot() end
 ---**Contexts:** Gameplay
 ---
 ---*Query*
----@return number amount
+---@return number amount 
 function FreeCities:GetUrbanDefenses() end
 
 z_dontRef_types.FreeCities = FreeCities

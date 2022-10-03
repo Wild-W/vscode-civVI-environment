@@ -1,7 +1,7 @@
 ---@meta
 
 
----**Contexts:** Gameplay, UI
+---**Contexts:** UI
 ---@class Trade
 local Trade = {}
 ---@type table<userdata, table>
@@ -11,35 +11,35 @@ Trade.TypeName = "Trade"
 ---**Contexts:** UI
 ---
 ---*Query*
----@return table routes
+---@return table routes 
 function Trade:GetIncomingRoutes() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return table routes
+---@return table routes 
 function Trade:GetOutgoingRoutes() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@param Player Player
----@return boolean
+---@param Player Player 
+---@return boolean  
 function Trade:HasActiveTradingPost(Player) end
 ---**Contexts:** UI
 ---
 ---*Query*
----@param Player Player
----@return boolean
+---@param Player Player 
+---@return boolean  
 function Trade:HasInactiveTradingPost(Player) end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return City City
+---@return City City 
 function Trade:GetCity() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@param playerID number
----@return boolean
+---@param playerID number 
+---@return boolean  
 function Trade:HasTradeRouteFrom(playerID) end
 
 z_dontRef_types.Trade = Trade

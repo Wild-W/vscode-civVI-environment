@@ -1,7 +1,7 @@
 ---@meta
 
 
----**Contexts:** UI
+---**Contexts:** Gameplay, UI
 ---@class PlayerReligion
 local PlayerReligion = {}
 ---@type table<userdata, table>
@@ -16,11 +16,11 @@ function PlayerReligion:CanAfford() end
 ---
 ---*Query*
 function PlayerReligion:CanCreatePantheon() end
----**Contexts:** UI
+---**Contexts:** Gameplay
 ---
 ---*Action*
 function PlayerReligion:ChangeFaithBalance() end
----**Contexts:** Gameplay, UI
+---**Contexts:** Gameplay
 ---
 ---*Action*
 function PlayerReligion:ChangeNumBeliefsEarned() end
@@ -36,7 +36,7 @@ function PlayerReligion:GetFaithYield() end
 ---
 ---*Query*
 function PlayerReligion:GetFaithYieldToolTip() end
----**Contexts:** Gameplay, UI
+---**Contexts:** UI
 ---
 ---*Query*
 function PlayerReligion:GetHolyCityID() end
@@ -44,19 +44,19 @@ function PlayerReligion:GetHolyCityID() end
 ---
 ---*Query*
 function PlayerReligion:GetNumBeliefsEarned() end
----**Contexts:** UI
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
 function PlayerReligion:GetPantheon() end
----**Contexts:** UI
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
 function PlayerReligion:GetReligionInMajorityOfCities() end
----**Contexts:** UI
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
 function PlayerReligion:GetReligionTypeCreated() end
----**Contexts:** Gameplay
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
 function PlayerReligion:HasLaunchedInquisition() end
@@ -64,11 +64,11 @@ function PlayerReligion:HasLaunchedInquisition() end
 ---
 ---*Query*
 function PlayerReligion:HasReligiousFoundingUnit() end
----**Contexts:** UI
+---**Contexts:** Gameplay
 ---
 ---*Action*
 function PlayerReligion:SetFaithBalance() end
----**Contexts:** Gameplay, UI
+---**Contexts:** Gameplay
 ---
 ---*Action*
 function PlayerReligion:SetHolyCity() end

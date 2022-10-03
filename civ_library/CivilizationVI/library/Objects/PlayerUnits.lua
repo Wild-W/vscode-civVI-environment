@@ -11,11 +11,11 @@ PlayerUnits.TypeName = "PlayerUnits"
 ---**Contexts:** Gameplay
 ---
 ---*Action*
----@param unitID number
----@param X number
----@param Y number
-function PlayerUnits:Create(unitID, X, Y) end
----**Contexts:** UI
+---@param unitID number 
+---@param x number 
+---@param y number 
+function PlayerUnits:Create(unitID, x, y) end
+---**Contexts:** Gameplay
 ---
 ---*Action*
 function PlayerUnits:Destroy() end
@@ -23,47 +23,43 @@ function PlayerUnits:Destroy() end
 ---
 ---*Query*
 function PlayerUnits:FindID() end
----**Contexts:** UI
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
 function PlayerUnits:GetCount() end
----**Contexts:** Gameplay
+---**Contexts:** UI
 ---
 ---*Query*
 function PlayerUnits:GetFirstReadyUnit() end
----**Contexts:** Gameplay
+---**Contexts:** UI
 ---
 ---*Query*
 function PlayerUnits:GetNextExtractingArchaeologist() end
----**Contexts:** Gameplay
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
 function PlayerUnits:Members() end
----**Contexts:** Gameplay, UI
+---**Contexts:** Gameplay
 ---
 ---*Action*
 function PlayerUnits:SetBuildDisabled() end
----**Contexts:** UI
----
----*Action*
-function PlayerUnits:SetMilitaryFormation() end
----**Contexts:** Gameplay, UI
+---**Contexts:** Gameplay
 ---
 ---*Action*
 function PlayerUnits:RecomputeAllCosts() end
----**Contexts:** Gameplay, UI
+---**Contexts:** Gameplay
 ---
 ---*Action*
 function PlayerUnits:RecomputeCost() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return {NeedsAttention: number, Total: number, Automated: number, CanMove: number} info
+---@return {NeedsAttention: number, Total: number, Automated: number, CanMove: number} info 
 function PlayerUnits:GetProcessingState() end
----**Contexts:** Gameplay, UI
+---**Contexts:** Gameplay
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function PlayerUnits:IsBuildDisabled() end
 
 z_dontRef_types.PlayerUnits = PlayerUnits

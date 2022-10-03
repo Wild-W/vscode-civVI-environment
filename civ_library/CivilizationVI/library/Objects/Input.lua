@@ -42,7 +42,7 @@ function Input.StopRecordingGestures() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Input.IsRecordingGestures() end
 ---**Contexts:** UI
 ---

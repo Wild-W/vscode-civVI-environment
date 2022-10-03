@@ -1,111 +1,112 @@
 ---@meta
 
 
----**Contexts:** UI
+---**Contexts:** Gameplay, UI
 ---@class Districts
 local Districts = {}
 ---@type table<userdata, table>
 Districts.__instances = {}
 ---Name of the object's class; differs between UI and Gameplay context
 Districts.TypeName = "Districts"
+---**Contexts:** UI
+---
+---*Query*
+---@param districtID number 
+---@return District District 
+function Districts:FindID(districtID) end
+---**Contexts:** Gameplay, UI
+---
+---*Query*
+---@param districtIndex number 
+---@return District District 
+function Districts:GetDistrict(districtIndex) end
 ---**Contexts:** Gameplay
 ---
 ---*Query*
----@param districtID number
----@return District District
-function Districts:FindID(districtID) end
----**Contexts:** UI
----
----*Query*
----@param districtID number
----@return District District
-function Districts:GetDistrict(districtID) end
----**Contexts:** UI
----
----*Query*
----@param districtID number
----@return number X
----@return number Y
+---@param districtID number 
+---@return number x 
+---@return number y 
 function Districts:GetDistrictLocation(districtID) end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return number amount
+---@return number amount 
 function Districts:GetNumAllowedDistrictsRequiringPopulation() end
----**Contexts:** UI
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return number amount
+---@return number amount 
 function Districts:GetNumDistricts() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return number amount
+---@return number amount 
 function Districts:GetNumZonedDistrictsRequiringPopulation() end
----**Contexts:** UI
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@param districtID number
----@return boolean
+---@param districtID number 
+---@return boolean  
 function Districts:HasDistrict(districtID) end
 ---**Contexts:** UI
 ---
 ---*Query*
----@param districtID number
----@return boolean
+---@param districtID number 
+---@return boolean  
 function Districts:IsContaminated(districtID) end
 ---**Contexts:** UI
 ---
 ---*Query*
----@param districtID number
----@param Plot Plot
----@return boolean
+---@param districtID number 
+---@param Plot Plot 
+---@return boolean  
 function Districts:IsPillaged(districtID, Plot) end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return table members
+---@return table members 
 function Districts:Members() end
----**Contexts:** Gameplay, UI
+---**Contexts:** Gameplay
 ---
 ---*Query*
 function Districts:GetDistrictByIndex() end
----**Contexts:** Gameplay, UI
+---**Contexts:** Gameplay
 ---
 ---*Action*
 function Districts:RemoveDistrict() end
----**Contexts:** Gameplay, UI
+---**Contexts:** UI
 ---
 ---*Query*
 function Districts:GetCount() end
----**Contexts:** Gameplay, UI
+---**Contexts:** Gameplay
 ---
 ---*Query*
 function Districts:GetDistrictAtLocation() end
----**Contexts:** Gameplay, UI
+---**Contexts:** Gameplay
 ---
 ---*Action*
 function Districts:SetDistrictPillaged() end
----**Contexts:** Gameplay, UI
+---**Contexts:** Gameplay
 ---
 ---*Query*
 function Districts:GetDistrictByType() end
----**Contexts:** Gameplay, UI
+---**Contexts:** Gameplay
 ---
 ---*Query*
 function Districts:GetDistrictByID() end
----**Contexts:** Gameplay, UI
+---**Contexts:** Gameplay
 ---
 ---*Query*
 function Districts:GetNumDistrictsOfType() end
----**Contexts:** Gameplay, UI
+---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Districts:IsComplete() end
----**Contexts:** Gameplay, UI
+---**Contexts:** Gameplay
 ---
 ---*Query*
+---@return number plotID 
 function Districts:GetPrereqDistrictPlotID() end
 
 z_dontRef_types.Districts = Districts

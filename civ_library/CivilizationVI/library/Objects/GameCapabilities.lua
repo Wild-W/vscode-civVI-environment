@@ -6,6 +6,6 @@ GameCapabilities = {}
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@param capability string
----@return boolean
+---@param capability string 
+---@return boolean  
 function GameCapabilities.HasCapability(capability) end

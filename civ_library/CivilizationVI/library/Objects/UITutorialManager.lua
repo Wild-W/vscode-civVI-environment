@@ -42,7 +42,7 @@ function UITutorialManager:IsOverlayEnabled() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function UITutorialManager:IsActive() end
 ---**Contexts:** UI
 ---

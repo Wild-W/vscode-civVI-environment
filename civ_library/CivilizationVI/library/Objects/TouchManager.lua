@@ -6,7 +6,7 @@ TouchManager = {}
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function TouchManager:IsInGesture() end
 ---**Contexts:** UI
 ---
@@ -15,7 +15,7 @@ function TouchManager:GetTouchPointCount() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function TouchManager:IsTouchToolTipDisabled() end
 ---**Contexts:** UI
 ---
@@ -32,12 +32,12 @@ function TouchManager:DisableTouchToolTip() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function TouchManager:WasInAnyGesture() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function TouchManager:IsAnyGestureStarted() end
 ---**Contexts:** UI
 ---
@@ -58,7 +58,7 @@ function TouchManager:GetTouchPointIDByIndex() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function TouchManager:WasInGesture() end
 ---**Contexts:** UI
 ---
@@ -71,7 +71,7 @@ function TouchManager:GetTouchPointLocation() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function TouchManager:IsInAnyGesture() end
 ---**Contexts:** UI
 ---

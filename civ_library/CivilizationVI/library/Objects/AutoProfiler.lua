@@ -6,53 +6,55 @@ AutoProfiler = {}
 ---**Contexts:** UI
 ---
 ---*Action*
----@param count number
+---@param count number 
 function AutoProfiler.SetLookAtCount(count) end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function AutoProfiler.GetWaitForLandmarks() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return string testName
+---@return string testName 
 function AutoProfiler.GetTestName() end
 ---**Contexts:** UI
 ---
 ---*Action*
----@param frames number
+---@param frames number 
 function AutoProfiler.SetLookAtFrames(frames) end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return number frames
+---@return number frames 
 function AutoProfiler.GetLookAtFrames() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return number GPUStallThreshold
+---@return number GPUStallThreshold 
 function AutoProfiler.GetGPUStallThreshold() end
 ---**Contexts:** UI
 ---
 ---*Action*
----@param filePath string
+---@param filePath string 
 function AutoProfiler.SetFilePath(filePath) end
 ---**Contexts:** UI
 ---
 ---*Action*
----@param GPUStallThreshold number
+---@param GPUStallThreshold number 
 function AutoProfiler.SetGPUStallThreshold(GPUStallThreshold) end
 ---**Contexts:** UI
 ---
 ---*Action*
----@param command string
+---
+---Runs a debug console command.
+---@param command string commands
 function AutoProfiler.RunCommand(command) end
 ---**Contexts:** UI
 ---
 ---*Query*
----@param state string
-function AutoProfiler.GetStateString(state) end
+---@return string state 
+function AutoProfiler.GetStateString() end
 ---**Contexts:** UI
 ---
 ---*Action*
@@ -60,50 +62,50 @@ function AutoProfiler.Start() end
 ---**Contexts:** UI
 ---
 ---*Action*
----@param testName string
+---@param testName string 
 function AutoProfiler.SetTestName(testName) end
 ---**Contexts:** UI
 ---
 ---*Action*
----@param waitForLandmarks boolean
+---@param waitForLandmarks boolean 
 function AutoProfiler.SetWaitForLandmarks(waitForLandmarks) end
 ---**Contexts:** UI
 ---
 ---*Action*
----@param zoom number
+---@param zoom number 
 function AutoProfiler.SetCameraZoom(zoom) end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function AutoProfiler.GetWaitForTerrain() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function AutoProfiler.IsIdle() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return number zoom
+---@return number zoom 
 function AutoProfiler.GetCameraZoom() end
 ---**Contexts:** UI
 ---
 ---*Action*
----@param waitForTerrain boolean
+---@param waitForTerrain boolean 
 function AutoProfiler.SetWaitForTerrain(waitForTerrain) end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return number testTimeRemaining
+---@return number testTimeRemaining 
 function AutoProfiler.GetTimeRemaining() end
 ---**Contexts:** UI
 ---
 ---*Action*
----@param summaryColumnName string
+---@param summaryColumnName string 
 function AutoProfiler.AddColumn(summaryColumnName) end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return number count
+---@return number count 
 function AutoProfiler.GetLookAtCount() end

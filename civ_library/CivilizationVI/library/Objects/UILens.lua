@@ -22,7 +22,7 @@ function UILens.GetOverlay() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function UILens.IsPlayerLensSetToActive() end
 ---**Contexts:** UI
 ---
@@ -31,7 +31,7 @@ function UILens.ToggleLayerOn() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function UILens.IsLensActive() end
 ---**Contexts:** UI
 ---
@@ -44,7 +44,7 @@ function UILens.SetLayerHexesColoredArea() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function UILens.IsLayerTogglable() end
 ---**Contexts:** UI
 ---
@@ -66,10 +66,6 @@ function UILens.SetLayerHexesPath() end
 ---
 ---*Action*
 function UILens.RestoreActiveLens() end
----**Contexts:** UI
----
----*Query*
-function UILens.SetLayerHexes() end
 ---**Contexts:** UI
 ---
 ---*Action*
@@ -97,7 +93,7 @@ function UILens.ShowOverlays() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function UILens.IsLayerOn() end
 ---**Contexts:** UI
 ---

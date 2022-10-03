@@ -3,353 +3,348 @@
 
 ---**Contexts:** Gameplay, UI
 Game = {}
----**Contexts:** Gameplay, UI
----
----*Action*
----@param eventSubType EventSubTypes
----@param text string
----@param X number
----@param Y number
-function Game.AddWorldViewText(eventSubType, text, X, Y) end
----**Contexts:** Gameplay, UI
----
----*Action*
----@param playerID number
----@param amount number
-function Game.ChangePlayerEraScore(playerID, amount) end
 ---**Contexts:** Gameplay
 ---
+---*Action*
+---@param eventSubType EventSubTypes 
+---@param text string 
+---@param x number 
+---@param y number 
+function Game.AddWorldViewText(eventSubType, text, x, y) end
+---**Contexts:** Gameplay, UI
+---
 ---*Query*
----@return Barbarians Barbarians
+---@return Barbarians Barbarians 
 function Game.GetBarbarianManager() end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return number turn
+---@return number turn 
 function Game.GetCurrentGameTurn() end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return GameEras GameEras
+---@return GameEras GameEras 
 function Game.GetEras() end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return FalloutManager FalloutManager
+---@return FalloutManager FalloutManager 
 function Game.GetFalloutManager() end
----**Contexts:** UI
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return GameDiplomacy GameDiplomacy
+---@return GameDiplomacy GameDiplomacy 
 function Game.GetGameDiplomacy() end
----**Contexts:** UI
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return GameGreatPeople GameGreatPeople
+---@return GameGreatPeople GameGreatPeople 
 function Game.GetGreatPeople() end
----**Contexts:** UI
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return PlayerTypes | integer playerID
+---@return PlayerTypes | integer playerID 
 function Game.GetLocalObserver() end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return number playerID
+---@return number playerID 
 function Game.GetLocalPlayer() end
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@param areMajor boolean
----@param areAlive boolean
----@return Player[] players
+---@param areMajor boolean 
+---@param areAlive boolean 
+---@return Player[] players 
 function Game.GetPlayers(areMajor, areAlive) end
----**Contexts:** Gameplay
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@param property string
----@return any value
+---@param property string 
+---@return any value 
 function Game:GetProperty(property) end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return QuestsManager QuestsManager
+---@return QuestsManager QuestsManager 
 function Game.GetQuestsManager() end
 ---**Contexts:** Gameplay
 ---
 ---*Query*
----@param upperLimit number
----@param logDescription string
----@return number number
+---@param upperLimit number 
+---@param logDescription string 
+---@return number number 
 function Game.GetRandNum(upperLimit, logDescription) end
----**Contexts:** Gameplay, UI
+---**Contexts:** Gameplay
 ---
 ---*Query*
----@return number gameRandomSeed
+---@return number gameRandomSeed 
 function Game.GetRandomSeed() end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return Religion Religion
+---@return GameReligion GameReligion 
 function Game.GetReligion() end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return TradeManager TradeManager
+---@return TradeManager TradeManager 
 function Game.GetTradeManager() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return WorldCongress WorldCongress
+---@return CacheCongressManager CacheCongressManager 
 function Game.GetWorldCongress() end
----**Contexts:** Gameplay
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@param playerID number
----@return boolean
+---@param playerID number 
+---@return boolean  
 function Game.IsAllowStrategicCommands(playerID) end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@param playerID number
----@return boolean
+---@param playerID number 
+---@return boolean  
 function Game.IsAllowTacticalCommands(playerID) end
----**Contexts:** Gameplay
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
 function Game.ObserverCanSeePlayer() end
----**Contexts:** Gameplay, UI
+---**Contexts:** Gameplay
 ---
 ---*Action*
----@param turn number
+---@param turn number 
 function Game.SetCurrentGameTurn(turn) end
----**Contexts:** UI
+---**Contexts:** Gameplay
 ---
 ---*Action*
----@param propertyKey string
----@param value any
+---@param propertyKey string 
+---@param value any 
 function Game:SetProperty(propertyKey, value) end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return table properties
+---@return table properties 
 function Game.GetProperties() end
 ---**Contexts:** Gameplay
 ---
 ---*Action*
----@param seed number
+---@param seed number 
 function Game.SetRandomSeed(seed) end
----**Contexts:** UI
+---**Contexts:** Gameplay
 ---
 ---*Action*
----@param playerID number
----@param achievement string
+---@param playerID number 
+---@param achievement string 
 function Game.UnlockAchievement(playerID, achievement) end
 ---**Contexts:** Gameplay
 ---
 ---*Action*
 function Game.WriteHistoryLog() end
----**Contexts:** Gameplay
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
 function Game.GetComponentID() end
----**Contexts:** Gameplay
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return GameHeroesManager GameHeroesManager
+---@return GameHeroesManager GameHeroesManager 
 function Game.GetHeroesManager() end
----**Contexts:** Gameplay
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@param playerID number
----@param defeatType string
----@return string requirementSet
+---@param playerID number 
+---@param defeatType string 
+---@return string requirementSet 
 function Game.GetDefeatRequirements(playerID, defeatType) end
----**Contexts:** Gameplay
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return string turnSegName
+---@return string turnSegName 
 function Game.GetCurrentTurnSegmentName() end
----**Contexts:** Gameplay
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return number turnSegHash
+---@return number turnSegHash 
 function Game.GetCurrentTurnSegment() end
----**Contexts:** Gameplay
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
 function Game.GetCurrentTurnPhase() end
 ---**Contexts:** Gameplay
 ---
 ---*Action*
----@param playerID number
+---@param playerID number 
 function Game.RetirePlayer(playerID) end
----**Contexts:** Gameplay
+---**Contexts:** Gameplay, UI
 ---
 ---*Action*
 function Game.GetPhaseName() end
 ---**Contexts:** Gameplay
 ---
 ---*Action*
----@param componentID table
----@return table object
+---@param componentID table 
+---@return table object 
 function Game.GetObjectFromComponentID(componentID) end
----**Contexts:** Gameplay
+---**Contexts:** Gameplay, UI
 ---
 ---*Action*
 function Game.GetCurrentTurnPhaseName() end
----**Contexts:** Gameplay
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@param defeatType string
----@return boolean
+---@param defeatType string 
+---@return boolean  
 function Game.IsDefeatEnabled(defeatType) end
 ---**Contexts:** Gameplay
 ---
 ---*Action*
----@param teamID number
+---@param teamID number 
 function Game.SetWinningTeam(teamID) end
----**Contexts:** Gameplay
----
----*Query*
----@param teamID number
----@param victoryType string
----@return number requirementSetID
-function Game.GetVictoryRequirements(teamID, victoryType) end
----**Contexts:** Gameplay
----
----*Query*
----@return number teamID
----@return string victoryType
-function Game.GetWinningTeam() end
----**Contexts:** Gameplay
----
----*Query*
----@param victoryType string
----@param teamID number
----@return number score
-function Game.GetVictoryProgressForTeam(victoryType, teamID) end
----**Contexts:** Gameplay
----
----*Query*
----@param victoryType string
----@return boolean
-function Game.IsVictoryEnabled(victoryType) end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@param greatWorkType string
+---@param teamID number 
+---@param victoryType string 
+---@return number requirementSetID 
+function Game.GetVictoryRequirements(teamID, victoryType) end
+---**Contexts:** Gameplay, UI
+---
+---*Query*
+---@return number teamID 
+---@return string victoryType 
+function Game.GetWinningTeam() end
+---**Contexts:** Gameplay, UI
+---
+---*Query*
+---@param victoryType string 
+---@param teamID number 
+---@return number score 
+function Game.GetVictoryProgressForTeam(victoryType, teamID) end
+---**Contexts:** Gameplay, UI
+---
+---*Query*
+---@param victoryType string 
+---@return boolean  
+function Game.IsVictoryEnabled(victoryType) end
+---**Contexts:** UI
+---
+---*Query*
+---@param greatWorkType string 
 function Game.GetGreatWorkType(greatWorkType) end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return CacheGameTechs CacheGameTechs
+---@return CacheGameTechs CacheGameTechs 
 function Game.GetTechs() end
----**Contexts:** Gameplay, UI
+---**Contexts:** UI
 ---
 ---*Query*
----@param plotID number
----@return table artifactInfo
+---@param plotID number 
+---@return table artifactInfo 
 function Game.GetArtifactAtPlot(plotID) end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return CacheGameHistoryManager CacheGameHistoryManager
+---@return CacheGameHistoryManager CacheGameHistoryManager 
 function Game.GetHistoryManager() end
----**Contexts:** Gameplay, UI
+---**Contexts:** UI
 ---
 ---*Query*
----@return number amount
+---@return number amount 
 function Game.GetActivePlayerCount() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return CacheGameEconomicManager CacheGameEconomicManager
+---@return CacheGameEconomicManager CacheGameEconomicManager 
 function Game.GetEconomicManager() end
----**Contexts:** Gameplay, UI
+---**Contexts:** UI
 ---
 ---*Query*
----@return number maxTurns
+---@return number maxTurns 
 function Game.GetMaxGameTurns() end
----**Contexts:** Gameplay, UI
+---**Contexts:** UI
 ---
 ---*Query*
----@param Unit Unit
----@return string nameSuffix
+---@param Unit Unit 
+---@return string nameSuffix 
 function Game.GetUnitNameSuffix(Unit) end
----**Contexts:** Gameplay, UI
+---**Contexts:** UI
 ---
 ---*Query*
----@return string phaseSound
+---@return string phaseSound 
 function Game.GetCurrentTurnPhaseSound() end
----**Contexts:** Gameplay, UI
+---**Contexts:** UI
 ---
 ---*Query*
----@return Unit[] units
+---@return Unit[] units 
 function Game.GetUnits() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return CacheEmergencyManager CacheEmergencyManager
+---@return CacheEmergencyManager CacheEmergencyManager 
 function Game.GetEmergencyManager() end
----**Contexts:** Gameplay, UI
+---**Contexts:** UI
 ---
 ---*Query*
----@param greatWorkIndex number
----@return number greatWorkType
+---@param greatWorkIndex number 
+---@return number greatWorkType 
 function Game.GetGreatWorkTypeFromIndex(greatWorkIndex) end
----**Contexts:** Gameplay, UI
+---**Contexts:** UI
 ---
 ---*Query*
----@param Unit Unit
+---@param Unit Unit 
 function Game.GetUnitNamePrefix(Unit) end
 ---**Contexts:** UI
 ---
 ---*Query*
----@param Unit Unit
----@param prefix string
----@param suffix string
----@return string name
+---@param Unit Unit 
+---@param prefix string 
+---@param suffix string 
+---@return string name 
 function Game.GenerateUnitName(Unit, prefix, suffix) end
----**Contexts:** Gameplay, UI
+---**Contexts:** UI
 ---
 ---*Query*
----@param artifactID number
----@return table artifactInfo
+---@param artifactID number 
+---@return table artifactInfo 
 function Game.GetArtifactByIndex(artifactID) end
----**Contexts:** Gameplay, UI
+---**Contexts:** UI
 ---
 ---*Query*
----@return number turn
+---@return number turn 
 function Game.GetGameEndTurn() end
----**Contexts:** Gameplay, UI
+---**Contexts:** UI
 ---
 ---*Query*
----@return CacheGameNationalParks CacheGameNationalParks
+---@return CacheGameNationalParks CacheGameNationalParks 
 function Game.GetNationalParks() end
----**Contexts:** Gameplay, UI
+---**Contexts:** UI
 ---
 ---*Query*
----@return CacheGameGossipManager CacheGameGossipManager
+---@return CacheGameGossipManager CacheGameGossipManager 
 function Game.GetGossipManager() end
----**Contexts:** Gameplay, UI
+---**Contexts:** UI
 ---
 ---*Query*
----@return CacheGameCulture CacheGameCulture
+---@return CacheGameCulture CacheGameCulture 
 function Game.GetCulture() end
----**Contexts:** Gameplay, UI
+---**Contexts:** UI
 ---
 ---*Query*
----@param greatWorkIndex number
----@return number playerID
+---@param greatWorkIndex number 
+---@return number playerID 
 function Game.GetGreatWorkPlayer(greatWorkIndex) end
----**Contexts:** Gameplay, UI
+---**Contexts:** UI
 ---
 ---*Query*
----@param greatWorkIndex number
----@return table greatWorkData
+---@param greatWorkIndex number 
+---@return table greatWorkData 
 function Game.GetGreatWorkDataFromIndex(greatWorkIndex) end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return string phaseSound
+---@return string phaseSound 
 function Game.GetPhaseSound() end

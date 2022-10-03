@@ -6,8 +6,8 @@ RouteBuilder = {}
 ---**Contexts:** Gameplay, UI
 ---
 ---*Action*
----@param Plot Plot
----@param routeType RouteTypes
+---@param Plot Plot 
+---@param routeType RouteTypes 
 function RouteBuilder.SetRouteType(Plot, routeType) end
 ---**Contexts:** Gameplay, UI
 ---
@@ -16,6 +16,6 @@ function RouteBuilder.CanHaveRoute() end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Action*
----@param Plot Plot
----@param isPillaged boolean
+---@param Plot Plot 
+---@param isPillaged boolean 
 function RouteBuilder.SetRoutePillaged(Plot, isPillaged) end

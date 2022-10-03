@@ -14,7 +14,7 @@ function Modding.CheckRequirements() end
 ---**Contexts:** UI
 ---
 ---*Action*
----@param workshopItemID number
+---@param workshopItemID number 
 function Modding.Unsubscribe(workshopItemID) end
 ---**Contexts:** UI
 ---
@@ -23,7 +23,7 @@ function Modding.GetModText() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Modding.CanDisableMod() end
 ---**Contexts:** UI
 ---
@@ -64,7 +64,7 @@ function Modding.GetUserInterfaces() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return table mods
+---@return table mods 
 function Modding.GetInstalledMods() end
 ---**Contexts:** UI
 ---
@@ -73,13 +73,13 @@ function Modding.EnableMod() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@param modHandle number
----@return table modInfo
+---@param modHandle number 
+---@return table modInfo 
 function Modding.GetModInfo(modHandle) end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Modding.IsModEnabled() end
 ---**Contexts:** UI
 ---
@@ -100,7 +100,7 @@ function Modding.GetIgnoreCompatibilityWarnings() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Modding.CanEnableMod() end
 ---**Contexts:** UI
 ---
@@ -149,7 +149,7 @@ function Modding.GetDLCDetails() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Modding.IsModCompatible() end
 ---**Contexts:** UI
 ---
@@ -162,7 +162,7 @@ function Modding.LaunchURL() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Modding.IsTransitioningFromAutosave() end
 ---**Contexts:** UI
 ---
@@ -175,12 +175,12 @@ function Modding.RestoreOutOfDateDLC() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Modding.IsModActive() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return table mods
+---@return table mods 
 function Modding.GetActiveMods() end
 ---**Contexts:** UI
 ---
@@ -201,7 +201,7 @@ function Modding.ConsumeFreeTurn() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Modding.IsJoinGameAllowed() end
 ---**Contexts:** UI
 ---
@@ -210,7 +210,7 @@ function Modding.DisableMod() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Modding.IsModOfficial() end
 ---**Contexts:** UI
 ---
@@ -223,7 +223,7 @@ function Modding.OwnsDLC() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Modding.IsLeaderAllowed() end
 ---**Contexts:** UI
 ---
@@ -240,17 +240,9 @@ function Modding.RestorePurchase() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Modding.IsModInstalled() end
 ---**Contexts:** UI
 ---
 ---*Action*
 function Modding.RestorePurchases() end
----**Contexts:** UI
----
----*Query*
-function Modding.ActivateAllowedDLC() end
----**Contexts:** UI
----
----*Action*
-function Modding.ActivateDLC() end

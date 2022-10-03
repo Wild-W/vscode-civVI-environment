@@ -6,7 +6,7 @@ Steam = {}
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Steam.IsOverlayEnabled() end
 ---**Contexts:** UI
 ---
@@ -19,7 +19,7 @@ function Steam.ActivateGameOverlayToWorkshop() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return number appID
+---@return number appID 
 function Steam.GetAppID() end
 ---**Contexts:** UI
 ---
@@ -72,7 +72,9 @@ function Steam.ActivateGameOverlayToUser() end
 ---**Contexts:** UI
 ---
 ---*Query*
-function Steam.GetFriendByIndex() end
+---@param friendIndex number 
+---@return table friendInfo 
+function Steam.GetFriendByIndex(friendIndex) end
 ---**Contexts:** UI
 ---
 ---*Query*

@@ -6,7 +6,7 @@ ResourceBuilder = {}
 ---**Contexts:** Gameplay
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function ResourceBuilder.CanHaveResource() end
 ---**Contexts:** Gameplay
 ---

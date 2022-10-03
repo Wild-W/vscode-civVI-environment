@@ -26,7 +26,7 @@ function Search.Optimize() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Search.HasContext() end
 ---**Contexts:** UI
 ---

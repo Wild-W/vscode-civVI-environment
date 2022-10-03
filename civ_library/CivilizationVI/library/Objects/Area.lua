@@ -11,7 +11,7 @@ Area.TypeName = "Area"
 ---**Contexts:** UI
 ---
 ---*Query*
----@return number areaID
+---@return number areaID 
 function Area:GetID() end
 ---**Contexts:** Gameplay, UI
 ---
@@ -20,7 +20,7 @@ function Area:GetImprovementCount() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return number amount
+---@return number amount 
 function Area:GetPlotCount() end
 ---**Contexts:** UI
 ---
@@ -45,31 +45,32 @@ function Area:GetTotalResources() end
 ---**Contexts:** Gameplay
 ---
 ---*Query*
+---@return boolean  
 function Area:HasNoFlatCoast() end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Area:IsCanyons() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Area:IsMountains() end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Area:IsNone() end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Area:IsWater() end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return {NorthEdge: integer, WestEdge: integer, SouthEdge: integer, EastEdge: integer} boundaries
+---@return {NorthEdge: integer, WestEdge: integer, SouthEdge: integer, EastEdge: integer} boundaries 
 function Area:GetBoundaries() end
 
 z_dontRef_types.Area = Area

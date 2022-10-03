@@ -11,57 +11,57 @@ PlayerCulture.TypeName = "PlayerCulture"
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function PlayerCulture:CanChangeGovernment() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function PlayerCulture:CanChangeGovernmentAtAll() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@param civicIndex number
----@return boolean
+---@param civicIndex number 
+---@return boolean  
 function PlayerCulture:CanProgress(civicIndex) end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function PlayerCulture:CanSlotPolicy() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@param civicIndex number
----@return boolean
+---@param civicIndex number 
+---@return boolean  
 function PlayerCulture:CanTriggerBoost(civicIndex) end
----**Contexts:** Gameplay, UI
+---**Contexts:** Gameplay
 ---
 ---*Action*
----@param amount number
+---@param amount number 
 function PlayerCulture:ChangeCurrentCulturalProgress(amount) end
----**Contexts:** UI
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function PlayerCulture:CivicCompletedThisTurn() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@param civicInfo table
----@return boolean
+---@param civicInfo table 
+---@return boolean  
 function PlayerCulture:CivicUnlocksGovernment(civicInfo) end
----**Contexts:** Gameplay
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@param governmentIndex number
----@return number turns
+---@param governmentIndex number 
+---@return number turns 
 function PlayerCulture:GetAnarchyTurns(governmentIndex) end
 ---**Contexts:** UI
 ---
 ---*Query*
 function PlayerCulture:GetAutoThemedBuilding() end
----**Contexts:** UI
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
 function PlayerCulture:GetCivicCompletedThisTurn() end
@@ -85,7 +85,7 @@ function PlayerCulture:GetCulturalProgress() end
 ---
 ---*Query*
 function PlayerCulture:GetCultureCost() end
----**Contexts:** UI
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
 function PlayerCulture:GetCultureYield() end
@@ -133,19 +133,19 @@ function PlayerCulture:GetLifetimeCulture() end
 ---
 ---*Query*
 function PlayerCulture:GetNumPoliciesUnlocked() end
----**Contexts:** UI
----
----*Query*
-function PlayerCulture:GetNumPolicySlots() end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
-function PlayerCulture:GetNumPolicySlotsOpen() end
+function PlayerCulture:GetNumPolicySlots() end
 ---**Contexts:** UI
 ---
 ---*Query*
+function PlayerCulture:GetNumPolicySlotsOpen() end
+---**Contexts:** Gameplay, UI
+---
+---*Query*
 function PlayerCulture:GetPolicyToUnlock() end
----**Contexts:** UI
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
 function PlayerCulture:GetProgressingCivic() end
@@ -157,48 +157,48 @@ function PlayerCulture:GetSlotPolicy() end
 ---
 ---*Query*
 function PlayerCulture:GetSlotType() end
----**Contexts:** Gameplay, UI
----
----*Query*
-function PlayerCulture:GetStaycationers() end
----**Contexts:** Gameplay, UI
----
----*Query*
-function PlayerCulture:GetTourismAt() end
----**Contexts:** Gameplay
----
----*Query*
----@param plotID number
-function PlayerCulture:GetTourismTooltipAt(plotID) end
----**Contexts:** Gameplay, UI
----
----*Query*
----@param plotID number
-function PlayerCulture:GetTouristsAt(plotID) end
----**Contexts:** Gameplay, UI
----
----*Query*
----@param plotID number
-function PlayerCulture:GetTouristsFrom(plotID) end
----**Contexts:** Gameplay
----
----*Query*
----@param playerID number
-function PlayerCulture:GetTouristsFromTooltip(playerID) end
----**Contexts:** Gameplay, UI
----
----*Query*
----@param playerID number
-function PlayerCulture:GetTouristsTo(playerID) end
----**Contexts:** Gameplay, UI
----
----*Query*
-function PlayerCulture:GetTurnsLeft() end
 ---**Contexts:** UI
 ---
 ---*Query*
+function PlayerCulture:GetStaycationers() end
+---**Contexts:** UI
+---
+---*Query*
+function PlayerCulture:GetTourismAt() end
+---**Contexts:** UI
+---
+---*Query*
+---@param plotID number 
+function PlayerCulture:GetTourismTooltipAt(plotID) end
+---**Contexts:** UI
+---
+---*Query*
+---@param plotID number 
+function PlayerCulture:GetTouristsAt(plotID) end
+---**Contexts:** UI
+---
+---*Query*
+---@param plotID number 
+function PlayerCulture:GetTouristsFrom(plotID) end
+---**Contexts:** UI
+---
+---*Query*
+---@param playerID number 
+function PlayerCulture:GetTouristsFromTooltip(playerID) end
+---**Contexts:** UI
+---
+---*Query*
+---@param playerID number 
+function PlayerCulture:GetTouristsTo(playerID) end
+---**Contexts:** UI
+---
+---*Query*
+function PlayerCulture:GetTurnsLeft() end
+---**Contexts:** Gameplay
+---
+---*Query*
 function PlayerCulture:GetTurnsLeftOnCurrentCivic() end
----**Contexts:** Gameplay, UI
+---**Contexts:** UI
 ---
 ---*Query*
 function PlayerCulture:GetTurnsToProgressCivic() end
@@ -206,93 +206,93 @@ function PlayerCulture:GetTurnsToProgressCivic() end
 ---
 ---*Query*
 function PlayerCulture:GovernmentChangeConsidered() end
----**Contexts:** Gameplay, UI
----
----*Query*
-function PlayerCulture:GovernmentChangeMade() end
----**Contexts:** Gameplay
----
----*Query*
----@return boolean
-function PlayerCulture:HasBoostBeenTriggered() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+function PlayerCulture:GovernmentChangeMade() end
+---**Contexts:** Gameplay, UI
+---
+---*Query*
+---@return boolean  
+function PlayerCulture:HasBoostBeenTriggered() end
+---**Contexts:** Gameplay, UI
+---
+---*Query*
+---@return boolean  
 function PlayerCulture:HasCivic() end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function PlayerCulture:IsGovernmentUnlocked() end
----**Contexts:** Gameplay, UI
----
----*Query*
----@return boolean
-function PlayerCulture:IsInAnarchy() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
+function PlayerCulture:IsInAnarchy() end
+---**Contexts:** Gameplay, UI
+---
+---*Query*
+---@return boolean  
 function PlayerCulture:IsPolicyObsolete() end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function PlayerCulture:IsPolicyUnlocked() end
----**Contexts:** Gameplay
+---**Contexts:** UI
 ---
 ---*Query*
 function PlayerCulture:PolicyChangeMade() end
----**Contexts:** Gameplay, UI
+---**Contexts:** UI
 ---
 ---*Action*
 function PlayerCulture:RequestChangeGovernment() end
----**Contexts:** Gameplay, UI
+---**Contexts:** UI
 ---
 ---*Action*
 function PlayerCulture:RequestClearSlot() end
----**Contexts:** Gameplay
+---**Contexts:** UI
 ---
 ---*Action*
 function PlayerCulture:RequestEnactPolicy() end
----**Contexts:** Gameplay, UI
+---**Contexts:** UI
 ---
 ---*Action*
 function PlayerCulture:RequestPolicyChanges() end
----**Contexts:** Gameplay, UI
+---**Contexts:** Gameplay
 ---
 ---*Action*
 function PlayerCulture:ReverseBoost() end
----**Contexts:** Gameplay, UI
+---**Contexts:** Gameplay
 ---
 ---*Action*
 function PlayerCulture:SetCivic() end
----**Contexts:** Gameplay, UI
+---**Contexts:** Gameplay
 ---
 ---*Action*
 function PlayerCulture:SetCivicCompletedThisTurn() end
----**Contexts:** UI
+---**Contexts:** Gameplay
 ---
 ---*Action*
 function PlayerCulture:SetCulturalProgress() end
----**Contexts:** Gameplay, UI
+---**Contexts:** Gameplay
 ---
 ---*Action*
 function PlayerCulture:SetCurrentGovernment() end
----**Contexts:** Gameplay, UI
+---**Contexts:** UI
 ---
 ---*Action*
 function PlayerCulture:SetGovernmentChangeConsidered() end
----**Contexts:** UI
+---**Contexts:** Gameplay
 ---
 ---*Action*
 function PlayerCulture:TriggerBoost() end
----**Contexts:** Gameplay, UI
+---**Contexts:** Gameplay
 ---
 ---*Action*
 function PlayerCulture:UnlockGovernment() end
----**Contexts:** UI
+---**Contexts:** Gameplay
 ---
 ---*Action*
 function PlayerCulture:UnlockPolicy() end
@@ -300,19 +300,19 @@ function PlayerCulture:UnlockPolicy() end
 ---
 ---*Action*
 function PlayerCulture:SetProgressingCivic() end
----**Contexts:** Gameplay
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function PlayerCulture:IsDominantOver() end
 ---**Contexts:** Gameplay
 ---
 ---*Action*
 function PlayerCulture:ClearPolicySlot() end
----**Contexts:** Gameplay
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function PlayerCulture:IsPolicyActive() end
 ---**Contexts:** Gameplay
 ---
@@ -325,12 +325,12 @@ function PlayerCulture:GetTurnsUntilVictory() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function PlayerCulture:CanPolicyBeSlotted() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function PlayerCulture:IsAutoThemedEligible() end
 ---**Contexts:** UI
 ---
@@ -343,12 +343,12 @@ function PlayerCulture:GetTurnsUntilDominant() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function PlayerCulture:IsCivicRevealed() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function PlayerCulture:IsEverAutoThemable() end
 ---**Contexts:** UI
 ---
@@ -357,7 +357,7 @@ function PlayerCulture:GetGreatWorksInCity() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function PlayerCulture:IsPolicyBanned() end
 
 z_dontRef_types.PlayerCulture = PlayerCulture

@@ -8,15 +8,15 @@ local PlayerDiplomacy = {}
 PlayerDiplomacy.__instances = {}
 ---Name of the object's class; differs between UI and Gameplay context
 PlayerDiplomacy.TypeName = "PlayerDiplomacy"
----**Contexts:** UI
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function PlayerDiplomacy:CanDeclareWarOn() end
----**Contexts:** UI
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function PlayerDiplomacy:CanMakePeaceWith() end
 ---**Contexts:** UI
 ---
@@ -26,27 +26,23 @@ function PlayerDiplomacy:ComputeCityWarmongerPoints() end
 ---
 ---*Query*
 function PlayerDiplomacy:ComputeDOWWarmongerPoints() end
----**Contexts:** Gameplay, UI
+---**Contexts:** UI
 ---
 ---*Query*
 function PlayerDiplomacy:ComputeResearchAgreementTurns() end
----**Contexts:** UI
+---**Contexts:** Gameplay
 ---
 ---*Action*
 function PlayerDiplomacy:DeclareWarOn() end
----**Contexts:** Gameplay, UI
+---**Contexts:** UI
 ---
 ---*Query*
 function PlayerDiplomacy:GetAllianceLevel() end
 ---**Contexts:** UI
 ---
 ---*Query*
-function PlayerDiplomacy:GetAllianceLevelWithPlayer() end
----**Contexts:** Gameplay, UI
----
----*Query*
 function PlayerDiplomacy:GetAlliancePointsPerTurn() end
----**Contexts:** Gameplay, UI
+---**Contexts:** UI
 ---
 ---*Query*
 function PlayerDiplomacy:GetAllianceTurnsThisLevel() end
@@ -54,7 +50,7 @@ function PlayerDiplomacy:GetAllianceTurnsThisLevel() end
 ---
 ---*Query*
 function PlayerDiplomacy:GetAllianceTurnsToNextLevel() end
----**Contexts:** Gameplay, UI
+---**Contexts:** UI
 ---
 ---*Query*
 function PlayerDiplomacy:GetAllianceTurnsUntilExpiration() end
@@ -62,7 +58,7 @@ function PlayerDiplomacy:GetAllianceTurnsUntilExpiration() end
 ---
 ---*Query*
 function PlayerDiplomacy:GetAllianceType() end
----**Contexts:** Gameplay, UI
+---**Contexts:** UI
 ---
 ---*Query*
 function PlayerDiplomacy:GetAtWarChangeTurn() end
@@ -74,7 +70,7 @@ function PlayerDiplomacy:GetDenounceTurn() end
 ---
 ---*Query*
 function PlayerDiplomacy:GetDiplomaticActionCost() end
----**Contexts:** UI
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
 function PlayerDiplomacy:GetMetTurn() end
@@ -126,7 +122,7 @@ function PlayerDiplomacy:GetSourceTurnsRemaining() end
 ---
 ---*Query*
 function PlayerDiplomacy:GetSpyCapacity() end
----**Contexts:** UI
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
 function PlayerDiplomacy:GetVisibilityOn() end
@@ -134,75 +130,75 @@ function PlayerDiplomacy:GetVisibilityOn() end
 ---
 ---*Query*
 function PlayerDiplomacy:GetWarmongerLevel() end
----**Contexts:** UI
+---**Contexts:** Gameplay
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function PlayerDiplomacy:HasAllied() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function PlayerDiplomacy:HasDefensivePact() end
----**Contexts:** UI
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function PlayerDiplomacy:HasDelegationAt() end
----**Contexts:** UI
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function PlayerDiplomacy:HasEmbassyAt() end
----**Contexts:** UI
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function PlayerDiplomacy:HasMet() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function PlayerDiplomacy:HasOpenBordersFrom() end
----**Contexts:** UI
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function PlayerDiplomacy:IsAtWarWith() end
----**Contexts:** UI
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function PlayerDiplomacy:IsAtWarWithHumans() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function PlayerDiplomacy:IsDiplomaticActionValid() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function PlayerDiplomacy:IsFightingAnyJointWarWith() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function PlayerDiplomacy:IsFightingJointWarAgainst() end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function PlayerDiplomacy:IsVisibilitySourceActive() end
----**Contexts:** UI
+---**Contexts:** Gameplay
 ---
 ---*Action*
 function PlayerDiplomacy:RecheckVisibilityOnAll() end
----**Contexts:** Gameplay, UI
+---**Contexts:** Gameplay
 ---
 ---*Action*
 function PlayerDiplomacy:SendKudoTo() end
----**Contexts:** Gameplay, UI
+---**Contexts:** Gameplay
 ---
 ---*Action*
 function PlayerDiplomacy:SendWarningTo() end
@@ -210,30 +206,30 @@ function PlayerDiplomacy:SendWarningTo() end
 ---
 ---*Action*
 function PlayerDiplomacy:SetHasAllied() end
----**Contexts:** Gameplay, UI
+---**Contexts:** Gameplay
 ---
 ---*Action*
 function PlayerDiplomacy:SetHasDelegationAt() end
----**Contexts:** Gameplay, UI
+---**Contexts:** Gameplay
 ---
 ---*Action*
 function PlayerDiplomacy:SetHasEmbassyAt() end
----**Contexts:** Gameplay, UI
+---**Contexts:** Gameplay
 ---
 ---*Action*
 function PlayerDiplomacy:SetHasMet() end
----**Contexts:** Gameplay, UI
+---**Contexts:** Gameplay
 ---
 ---*Action*
 function PlayerDiplomacy:SetPermanentAlliance() end
----**Contexts:** Gameplay, UI
+---**Contexts:** Gameplay
 ---
 ---*Action*
 function PlayerDiplomacy:SetVisibilityOn() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function PlayerDiplomacy:CanLiberateCityTo() end
 ---**Contexts:** UI
 ---
@@ -243,7 +239,7 @@ function PlayerDiplomacy:GetRecentMissions() end
 ---
 ---*Query*
 function PlayerDiplomacy:GetGrievancesAgainst() end
----**Contexts:** UI
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
 function PlayerDiplomacy:CalcFavorPerTurnFromAlliances() end
@@ -258,7 +254,7 @@ function PlayerDiplomacy:GetDeclaredFriendshipTurn() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function PlayerDiplomacy:IsPromiseMade() end
 ---**Contexts:** UI
 ---
@@ -283,22 +279,22 @@ function PlayerDiplomacy:SetHasDeclaredFriendship() end
 ---**Contexts:** Gameplay
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function PlayerDiplomacy:HasDeclaredFriendship() end
 ---**Contexts:** Gameplay
 ---
 ---*Query*
----@return number amount
+---@return number amount 
 function PlayerDiplomacy:GetFavorPerTurn() end
 ---**Contexts:** Gameplay
 ---
 ---*Query*
----@param amount number
+---@param amount number 
 function PlayerDiplomacy:ChangeFavor(amount) end
 ---**Contexts:** Gameplay
 ---
 ---*Query*
----@return number amount
+---@return number amount 
 function PlayerDiplomacy:GetFavor() end
 
 z_dontRef_types.PlayerDiplomacy = PlayerDiplomacy

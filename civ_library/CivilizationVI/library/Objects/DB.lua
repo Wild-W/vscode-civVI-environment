@@ -6,8 +6,10 @@ DB = {}
 ---**Contexts:** Gameplay, UI
 ---
 ---*Action*
----@param text string
----@return number hash
+---
+---Hashes inputted text the same way the Gameplay DB does
+---@param text string 
+---@return number hash 
 function DB.MakeHash(text) end
 ---**Contexts:** Gameplay, UI
 ---
@@ -15,37 +17,49 @@ function DB.MakeHash(text) end
 function DB.CollectMemoryUsage() end
 ---**Contexts:** Gameplay, UI
 ---
----*Action*
+---*Query*
+---@return number amount 
 function DB.ConfigurationQueryCount() end
 ---**Contexts:** Gameplay, UI
 ---
----*Action*
----@param SQLQuery string
----@return table[] resultSet
+---*Query*
+---
+---Query the Gameplay DB, no write permissions so select statements only
+---@param SQLQuery string 
+---@return table[] resultSet 
 function DB.Query(SQLQuery) end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
+---@return number memoryUsage 
 function DB.GetMemoryUsage() end
 ---**Contexts:** Gameplay, UI
 ---
----*Action*
+---*Query*
+---@return number amount 
 function DB.QueryCount() end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Action*
-function DB.ConfigurationQuerySQL() end
+---@param unknown integer Might be the Index for SQL queries made in your specific Lua Context
+---@return string SQLQuery 
+function DB.ConfigurationQuerySQL(unknown) end
 ---**Contexts:** Gameplay, UI
 ---
----*Action*
+---*Query*
+---@return number amount 
 function DB.ConfigurationChanges() end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Action*
----@param SQLQuery string
----@return table[] resultSet
+---
+---Query the Configuration DB, read/write permissions
+---@param SQLQuery string 
+---@return table[] resultSet 
 function DB.ConfigurationQuery(SQLQuery) end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Action*
-function DB.QuerySQL() end
+---@param unknown integer Might be the Index for SQL queries made in your specific Lua Context
+---@return string SQLQuery 
+function DB.QuerySQL(unknown) end

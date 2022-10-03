@@ -18,8 +18,8 @@ function TerrainManager.IsSubmerged() end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@param Plot Plot
----@return boolean
+---@param Plot Plot 
+---@return boolean  
 function TerrainManager.IsProtected(Plot) end
 ---**Contexts:** Gameplay
 ---

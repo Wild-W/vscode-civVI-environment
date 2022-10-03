@@ -11,60 +11,60 @@ PlayerCities.TypeName = "PlayerCities"
 ---**Contexts:** Gameplay
 ---
 ---*Action*
----@param X number
----@param Y number
-function PlayerCities:Create(X, Y) end
+---@param x number 
+---@param y number 
+function PlayerCities:Create(x, y) end
 ---**Contexts:** Gameplay
 ---
 ---*Action*
 function PlayerCities:Destroy() end
----**Contexts:** Gameplay
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
 function PlayerCities:FindID() end
----**Contexts:** Gameplay
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return City City
+---@return City City 
 function PlayerCities:GetCapitalCity() end
----**Contexts:** Gameplay
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return number amount
+---@return number amount 
 function PlayerCities:GetCount() end
----**Contexts:** Gameplay
+---**Contexts:** UI
 ---
 ---*Query*
 function PlayerCities:GetFirstRangedAttackCity() end
----**Contexts:** Gameplay
+---**Contexts:** UI
 ---
 ---*Query*
 function PlayerCities:GetNextCapturedCity() end
----**Contexts:** Gameplay
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
 function PlayerCities:Members() end
----**Contexts:** Gameplay
+---**Contexts:** UI
 ---
 ---*Query*
 function PlayerCities:IsCityWithinRange() end
----**Contexts:** Gameplay
+---**Contexts:** UI
 ---
 ---*Query*
 function PlayerCities:GetNextRebelledCity() end
----**Contexts:** Gameplay
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
 function PlayerCities:FindClosest() end
 ---**Contexts:** Gameplay
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function PlayerCities:IsValidFoundLocation() end
 ---**Contexts:** Gameplay
 ---
 ---*Query*
----@return City City
+---@return City City 
 function PlayerCities:GetOriginalCapitalCity() end
 
 z_dontRef_types.PlayerCities = PlayerCities

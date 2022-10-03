@@ -15,14 +15,14 @@ function DirtyComponents:Clear() end
 ---**Contexts:** UI
 ---
 ---*Action*
----@param componentEvent string
+---@param componentEvent string 
 function DirtyComponents:AddEvent(componentEvent) end
 ---**Contexts:** UI
 ---
 ---*Action*
----@param playerID number
----@param componentID number
----@param componentType ComponentType
+---@param playerID number 
+---@param componentID number 
+---@param componentType ComponentType 
 function DirtyComponents:AddComponent(playerID, componentID, componentType) end
 ---**Contexts:** UI
 ---

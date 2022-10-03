@@ -19,7 +19,7 @@ function InputStruct:GetKey() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return KeyEvents keyEvent
+---@return KeyEvents keyEvent 
 function InputStruct:GetMessageType() end
 ---**Contexts:** UI
 ---
@@ -48,32 +48,32 @@ function InputStruct:GetY() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function InputStruct:IsShiftDown() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function InputStruct:IsControlDown() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function InputStruct:IsLButtonDown() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function InputStruct:IsRButtonDown() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function InputStruct:IsMButtonDown() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function InputStruct:IsAnyButtonDown() end
 
 z_dontRef_types.InputStruct = InputStruct

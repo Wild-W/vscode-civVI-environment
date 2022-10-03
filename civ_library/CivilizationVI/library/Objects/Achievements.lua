@@ -34,5 +34,5 @@ function Achievements.GetAchievementName() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Achievements.IsAchievementUnlocked() end

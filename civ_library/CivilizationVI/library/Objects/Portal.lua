@@ -11,27 +11,27 @@ Portal.TypeName = "Portal"
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return number plotID
+---@return number plotID 
 function Portal.GetEntrancePlotIndex() end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return number amount
+---@return number amount 
 function Portal.GetExitCount() end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return number plotID
+---@return number plotID 
 function Portal.GetExitPlotIndex() end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Portal.HasEntranceAt() end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Portal.HasExitAt() end
 
 z_dontRef_types.Portal = Portal

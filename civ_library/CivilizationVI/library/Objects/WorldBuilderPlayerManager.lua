@@ -15,12 +15,12 @@ function WorldBuilderPlayerManager:SetRandomMajorStartingPosition() end
 ---**Contexts:** Gameplay
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function WorldBuilderPlayerManager:IsPlayerInitialized() end
 ---**Contexts:** Gameplay
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function WorldBuilderPlayerManager:PlayerHasTech() end
 ---**Contexts:** Gameplay
 ---
@@ -41,7 +41,13 @@ function WorldBuilderPlayerManager:SetCivilizationStartingPosition() end
 ---**Contexts:** Gameplay
 ---
 ---*Action*
-function WorldBuilderPlayerManager:SetPlayerLeader() end
+---
+---Cannot be used to change player leader or civilization mid-game
+---@param playerID number 
+---@param leaderIndex number 
+---@param civilizationIndex number 
+---@param civilizationLevelType CivilizationLevelTypes 
+function WorldBuilderPlayerManager:SetPlayerLeader(playerID, leaderIndex, civilizationIndex, civilizationLevelType) end
 ---**Contexts:** Gameplay
 ---
 ---*Query*
@@ -73,7 +79,7 @@ function WorldBuilderPlayerManager:GetSlotStatus() end
 ---**Contexts:** Gameplay
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function WorldBuilderPlayerManager:PlayerHasCivic() end
 ---**Contexts:** Gameplay
 ---
@@ -106,7 +112,7 @@ function WorldBuilderPlayerManager:UninitializePlayer() end
 ---**Contexts:** Gameplay
 ---
 ---*Query*
----@return number maxPlayers
+---@return number maxPlayers 
 function WorldBuilderPlayerManager:GetMaxPlayers() end
 ---**Contexts:** Gameplay
 ---

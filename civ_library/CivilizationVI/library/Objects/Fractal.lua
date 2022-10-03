@@ -6,10 +6,10 @@ Fractal = {}
 ---**Contexts:** Gameplay
 ---
 ---*Action*
----@return Frac Frac
+---@return Frac Frac 
 function Fractal.Create() end
 ---**Contexts:** Gameplay
 ---
 ---*Action*
----@return Frac Frac
+---@return Frac Frac 
 function Fractal.CreateRifts() end

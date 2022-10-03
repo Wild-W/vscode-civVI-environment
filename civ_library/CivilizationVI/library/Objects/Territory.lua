@@ -15,8 +15,8 @@ function Territory:GetName() end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return number centerX
----@return number centerY
+---@return number centerX 
+---@return number centerY 
 function Territory:GetCentroid() end
 ---**Contexts:** Gameplay, UI
 ---
@@ -29,12 +29,12 @@ function Territory:IsLake() end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return number terrainClassIndex
+---@return number terrainClassIndex 
 function Territory:GetTerrainClass() end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return number territoryID
+---@return number territoryID 
 function Territory:GetID() end
 ---**Contexts:** Gameplay, UI
 ---
@@ -59,9 +59,9 @@ function Territory:GetTotalFeatures() end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Territory:IsNone() end
----**Contexts:** Gameplay, UI
+---**Contexts:** Gameplay
 ---
 ---*Action*
 function Territory:SetName() end

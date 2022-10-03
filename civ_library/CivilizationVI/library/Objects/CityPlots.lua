@@ -19,13 +19,15 @@ function CityPlots.GetPurchasedByCityID() end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@param City City
----@return Plot[] plots
+---@param City City 
+---@return Plot[] plots Every plot owned by a city
 function CityPlots.GetPurchasedPlots(City) end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
-function CityPlots.GetVisiblePurchasedPlots() end
+---@param City City 
+---@return Plot[] plots Every visible plot owned by a city
+function CityPlots.GetVisiblePurchasedPlots(City) end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*

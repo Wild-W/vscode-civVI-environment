@@ -6,17 +6,17 @@ GameSummary = {}
 ---**Contexts:** UI
 ---
 ---*Query*
----@return number amount
+---@return number amount 
 function GameSummary.GetDataSetCount() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return string desc
+---@return string desc 
 function GameSummary.GetDataSetDisplayDescription() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function GameSummary.HasDataSetValues() end
 ---**Contexts:** UI
 ---

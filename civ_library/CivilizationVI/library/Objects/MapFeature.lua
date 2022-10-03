@@ -15,7 +15,7 @@ function MapFeature:GetDirection() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return Plot[] plots
+---@return Plot[] plots 
 function MapFeature:GetPlots() end
 ---**Contexts:** Gameplay, UI
 ---

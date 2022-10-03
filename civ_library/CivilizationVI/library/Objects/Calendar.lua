@@ -10,8 +10,8 @@ function Calendar.MakeDateStr() end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@param turn number
----@return string yearDateStr
+---@param turn number 
+---@return string yearDateStr 
 function Calendar.MakeYearStr(turn) end
 ---**Contexts:** Gameplay, UI
 ---

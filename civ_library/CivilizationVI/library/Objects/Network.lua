@@ -14,7 +14,7 @@ function Network.CheckServerForUnseenComplete() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Network.UGCRestrictionsEnabled() end
 ---**Contexts:** UI
 ---
@@ -27,12 +27,12 @@ function Network.KickVote() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Network.IsNetworkAvailable() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return number playerID
+---@return number playerID 
 function Network.GetLocalPlayerID() end
 ---**Contexts:** UI
 ---
@@ -57,12 +57,12 @@ function Network.JoinGame() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Network.IsInternetLobbyServiceAvailable() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Network.IsNetSessionHost() end
 ---**Contexts:** UI
 ---
@@ -75,7 +75,7 @@ function Network.SetInPSPlusFeature() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Network.IsPlayerResyncing() end
 ---**Contexts:** UI
 ---
@@ -96,7 +96,7 @@ function Network.CanShowFriendChatWindow() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Network.IsUserLoggedIntoCrossPlayLobbyService() end
 ---**Contexts:** UI
 ---
@@ -109,7 +109,7 @@ function Network.SaveGame() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Network.IsPlayerHotJoining() end
 ---**Contexts:** UI
 ---
@@ -130,12 +130,12 @@ function Network.SetCompletedGameSeen() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Network.IsNetworkServiceAccountAvailable() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Network.IsSessionActive() end
 ---**Contexts:** UI
 ---
@@ -152,7 +152,7 @@ function Network.GetElapsedSessionTime() end
 ---**Contexts:** UI
 ---
 ---*Action*
----@return boolean
+---@return boolean  
 function Network.IsMatchMaking() end
 ---**Contexts:** UI
 ---
@@ -169,7 +169,7 @@ function Network.KickPlayer() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Network.IsCloudLaunching() end
 ---**Contexts:** UI
 ---
@@ -194,37 +194,37 @@ function Network.ProfanityFilter() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Network.IsSessionInCloseState() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Network.HasKickVotedStarted() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Network.HasVotedToKick() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Network.HasCapability() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Network.CanViewFriendProfile() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Network.IsInSession() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Network.ResetHasShownNetworkDisconnectError() end
 ---**Contexts:** UI
 ---
@@ -233,7 +233,7 @@ function Network.GetGameHostPlayerID() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Network.HasSingleFriendInvite() end
 ---**Contexts:** UI
 ---
@@ -242,22 +242,22 @@ function Network.ForceResync() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Network.IsPlayerConnected() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return FriendsInstance FriendsInstance
+---@return FriendsInstance FriendsInstance 
 function Network.GetFriends() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Network.IsCloudMatchStarted() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Network.PSPlusAvailability() end
 ---**Contexts:** UI
 ---
@@ -266,7 +266,7 @@ function Network.BroadcastGameConfig() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Network.IsCloudJoinsBlocked() end
 ---**Contexts:** UI
 ---
@@ -275,7 +275,7 @@ function Network.CloudQuitGame() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Network.IsCrossPlayLobbyServiceAvailable() end
 ---**Contexts:** UI
 ---
@@ -284,12 +284,12 @@ function Network.CheckServerForCloudNotifications() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Network.IsCloudTurnPlayer() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Network.IsSessionClosing() end
 ---**Contexts:** UI
 ---
@@ -318,12 +318,12 @@ function Network.GetTransportType() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Network.IsEveryoneConnected() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Network.IsInGameStartedState() end
 ---**Contexts:** UI
 ---
@@ -332,7 +332,7 @@ function Network.GetGameConfigurationSaveType() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Network.IsGameHost() end
 ---**Contexts:** UI
 ---
@@ -345,7 +345,7 @@ function Network.GetNetSessionHostPlayerID() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Network.IsPlayerKicked() end
 ---**Contexts:** UI
 ---
@@ -366,12 +366,12 @@ function Network.InvitePlayTogetherUsers() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Network.IsInternetMultiplayerInitialized() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Network.IsMultiplayerRestrictionEnabled() end
 ---**Contexts:** UI
 ---
@@ -384,7 +384,7 @@ function Network.CloudEndTurn() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Network.IsGameCoreActive() end
 ---**Contexts:** UI
 ---
@@ -401,10 +401,10 @@ function Network.BroadcastPlayerInfo() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Network.IsUpdateRequired() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Network.IsNpReachable() end

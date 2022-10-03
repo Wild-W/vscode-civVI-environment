@@ -6,7 +6,7 @@ Areas = {}
 ---**Contexts:** Gameplay
 ---
 ---*Query*
----@return number amount
+---@return number amount 
 function Areas.GetLandCount() end
 ---**Contexts:** Gameplay
 ---

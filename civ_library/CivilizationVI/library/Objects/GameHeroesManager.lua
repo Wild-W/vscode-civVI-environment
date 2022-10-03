@@ -1,7 +1,7 @@
 ---@meta
 
 
----**Contexts:** Gameplay
+---**Contexts:** Gameplay, UI
 ---@class GameHeroesManager
 local GameHeroesManager = {}
 ---@type table<userdata, table>
@@ -12,54 +12,54 @@ GameHeroesManager.TypeName = "GameHeroesManager"
 ---
 ---*Action*
 function GameHeroesManager:CreateHero() end
----**Contexts:** Gameplay
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@param playerID number
----@param heroClassIndex number
----@return boolean
+---@param playerID number 
+---@param heroClassIndex number 
+---@return boolean  
 function GameHeroesManager:IsHeroDiscovered(playerID, heroClassIndex) end
 ---**Contexts:** Gameplay
 ---
 ---*Action*
----@param playerID number
----@param heroClassIndex number
----@param isDiscovered boolean
+---@param playerID number 
+---@param heroClassIndex number 
+---@param isDiscovered boolean 
 function GameHeroesManager:SetHeroDiscovered(playerID, heroClassIndex, isDiscovered) end
 ---**Contexts:** Gameplay
 ---
 ---*Action*
----@param playerID number
+---@param playerID number 
 function GameHeroesManager:PlayerDiscoverNextHero(playerID) end
----**Contexts:** Gameplay
+---**Contexts:** UI
 ---
 ---*Query*
----@param heroClassIndex number
----@return number cityID
+---@param heroClassIndex number 
+---@return number cityID 
 function GameHeroesManager:GetHeroOriginCityID(heroClassIndex) end
----**Contexts:** Gameplay, UI
+---**Contexts:** UI
 ---
 ---*Query*
----@param unitIndex number
----@return number heroClassIndex
+---@param unitIndex number 
+---@return number heroClassIndex 
 function GameHeroesManager:GetUnitHeroClass(unitIndex) end
----**Contexts:** Gameplay, UI
+---**Contexts:** UI
 ---
 ---*Query*
----@param heroClassIndex number
----@return number playerID
+---@param heroClassIndex number 
+---@return number playerID 
 function GameHeroesManager:GetHeroClaimPlayer(heroClassIndex) end
----**Contexts:** Gameplay, UI
+---**Contexts:** UI
 ---
 ---*Query*
----@param heroClassIndex number
----@return number charges
+---@param heroClassIndex number 
+---@return number charges 
 function GameHeroesManager:GetHeroClassBaseCharges(heroClassIndex) end
----**Contexts:** Gameplay, UI
+---**Contexts:** UI
 ---
 ---*Query*
----@param playerID number
----@return number buildingIndex
+---@param playerID number 
+---@return number buildingIndex 
 function GameHeroesManager:GetPlayerHeroOriginBuildingType(playerID) end
 
 z_dontRef_types.GameHeroesManager = GameHeroesManager

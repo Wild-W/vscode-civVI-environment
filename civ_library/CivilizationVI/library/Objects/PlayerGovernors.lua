@@ -11,128 +11,103 @@ PlayerGovernors.TypeName = "PlayerGovernors"
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function PlayerGovernors:CanAppoint() end
----**Contexts:** Gameplay, UI
+---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function PlayerGovernors:CanPromote() end
----**Contexts:** UI
+---**Contexts:** Gameplay
 ---
 ---*Action*
 function PlayerGovernors:ChangeGovernorPoints() end
----**Contexts:** Gameplay
+---**Contexts:** UI
 ---
 ---*Query*
 function PlayerGovernors:GetAssignedCity() end
----**Contexts:** Gameplay
+---**Contexts:** UI
 ---
 ---*Query*
----@param City City
+---@param City City 
 function PlayerGovernors:GetAssignedGovernor(City) end
----**Contexts:** Gameplay, UI
+---**Contexts:** UI
 ---
 ---*Query*
 function PlayerGovernors:GetGovernorList() end
----**Contexts:** Gameplay
----
----*Query*
-function PlayerGovernors:GetGovernorPoints() end
----**Contexts:** Gameplay
----
----*Query*
-function PlayerGovernors:GetGovernorPointsSpent() end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
-function PlayerGovernors:GetIdentityPressure() end
----**Contexts:** Gameplay
+function PlayerGovernors:GetGovernorPoints() end
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
-function PlayerGovernors:GetNeutralizedTurns() end
+function PlayerGovernors:GetGovernorPointsSpent() end
 ---**Contexts:** UI
 ---
 ---*Query*
 function PlayerGovernors:GetTurnsToEstablish() end
----**Contexts:** Gameplay
+---**Contexts:** UI
 ---
 ---*Query*
-function PlayerGovernors:GetType() end
----**Contexts:** Gameplay
----
----*Query*
----@return boolean
+---@return boolean  
 function PlayerGovernors:HasGovernor() end
----**Contexts:** Gameplay
+---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
-function PlayerGovernors:HasPromotion() end
----**Contexts:** Gameplay, UI
----
----*Query*
----@return boolean
+---@return boolean  
 function PlayerGovernors:HasTitleBeenConsidered() end
----**Contexts:** Gameplay
----
----*Query*
----@return boolean
-function PlayerGovernors:IsEstablished() end
----**Contexts:** Gameplay
----
----*Query*
----@return boolean
-function PlayerGovernors:IsGovernCityState() end
 ---**Contexts:** UI
 ---
 ---*Action*
 function PlayerGovernors:SetTitleConsidered() end
----**Contexts:** Gameplay
+---**Contexts:** UI
 ---
 ---*Query*
 function PlayerGovernors:CanAppointGovernor() end
----**Contexts:** Gameplay
+---**Contexts:** UI
 ---
 ---*Query*
+---@return number secretSocietyIndex 
 function PlayerGovernors:GetSecretSociety() end
----**Contexts:** Gameplay
+---**Contexts:** UI
 ---
 ---*Query*
 function PlayerGovernors:CanEverAppointGovernor() end
----**Contexts:** Gameplay
+---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function PlayerGovernors:IsGovernorEstablished() end
----**Contexts:** Gameplay
+---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function PlayerGovernors:CanPromoteGovernor() end
----**Contexts:** Gameplay
+---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function PlayerGovernors:CanAssignGovernor() end
----**Contexts:** Gameplay
+---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function PlayerGovernors:IsAwareOfSecretSociety() end
----**Contexts:** Gameplay
+---**Contexts:** UI
 ---
 ---*Query*
 function PlayerGovernors:GetBaseTurnsUntilEstablished() end
----**Contexts:** Gameplay
+---**Contexts:** UI
 ---
 ---*Query*
----@return CacheGovernor CacheGovernor
-function PlayerGovernors:GetGovernor() end
----**Contexts:** Gameplay
+---@param governorHash number 
+---@return CacheGovernor CacheGovernor 
+function PlayerGovernors:GetGovernor(governorHash) end
+---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function PlayerGovernors:CanEarnPromotion() end
 
 z_dontRef_types.PlayerGovernors = PlayerGovernors

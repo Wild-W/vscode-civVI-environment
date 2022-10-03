@@ -6,56 +6,60 @@ Units = {}
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Units.AreUnitsInPlot() end
----**Contexts:** UI
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Units.AreUnitsInPlotLayerID() end
 ---**Contexts:** UI
 ---
 ---*Query*
 function Units.GetLayerCount() end
----**Contexts:** Gameplay, UI
+---**Contexts:** UI
 ---
 ---*Query*
 function Units.GetPlayerUnitsInPlot() end
----**Contexts:** Gameplay, UI
+---**Contexts:** UI
 ---
 ---*Query*
 function Units.GetPlayerUnitsInPlotLayerID() end
----**Contexts:** UI
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
 function Units.GetUnitByIndexInPlot() end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
+---@return number amount 
 function Units.GetUnitCountInPlot() end
----**Contexts:** UI
----
----*Query*
-function Units.GetUnitCountInPlotLayerID() end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
-function Units.GetUnitCountInPlotLayerIndex() end
+---@return number amount 
+function Units.GetUnitCountInPlotLayerID() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@param Plot Plot
----@return Unit[] units
+---@return number amount 
+function Units.GetUnitCountInPlotLayerIndex() end
+---**Contexts:** Gameplay, UI
+---
+---*Query*
+---@param Plot Plot 
+---@return Unit[] units 
 function Units.GetUnitsInPlot(Plot) end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@param X number
----@param Y number
----@param mapLayer MapLayers
----@return Unit[] units
-function Units.GetUnitsInPlotLayerID(X, Y, mapLayer) end
+---@param x number 
+---@param y number 
+---@param mapLayer MapLayers 
+---@return Unit[] units 
+function Units.GetUnitsInPlotLayerID(x, y, mapLayer) end
 ---**Contexts:** UI
 ---
 ---*Query*
+---@return Unit[] units 
 function Units.GetUnitsInPlotLayerIndex() end

@@ -23,7 +23,7 @@ function DiplomacyDealItem:SetValueType() end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function DiplomacyDealItem:HasPossibleAmounts() end
 ---**Contexts:** Gameplay, UI
 ---
@@ -64,7 +64,7 @@ function DiplomacyDealItem:GetMaxAmount() end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function DiplomacyDealItem:IsChild() end
 ---**Contexts:** Gameplay, UI
 ---
@@ -89,12 +89,12 @@ function DiplomacyDealItem:GetValueType() end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function DiplomacyDealItem:IsValid() end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function DiplomacyDealItem:IsLocked() end
 ---**Contexts:** Gameplay, UI
 ---
@@ -115,7 +115,7 @@ function DiplomacyDealItem:SetDuration() end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function DiplomacyDealItem:IsUnacceptable() end
 ---**Contexts:** Gameplay, UI
 ---
@@ -132,7 +132,7 @@ function DiplomacyDealItem:GetSubTypeNameID() end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function DiplomacyDealItem:HasPossibleValues() end
 ---**Contexts:** Gameplay, UI
 ---
@@ -161,7 +161,7 @@ function DiplomacyDealItem:GetPlayerIDs() end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function DiplomacyDealItem:IsExpired() end
 
 z_dontRef_types.DiplomacyDealItem = DiplomacyDealItem

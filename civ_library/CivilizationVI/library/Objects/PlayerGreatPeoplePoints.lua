@@ -15,24 +15,24 @@ function PlayerGreatPeoplePoints:CalculatePointsPerTurn() end
 ---**Contexts:** Gameplay
 ---
 ---*Action*
----@param greatPersonClassID number
----@param amount number
-function PlayerGreatPeoplePoints:ChangePointsTotal(greatPersonClassID, amount) end
----**Contexts:** Gameplay, UI
+---@param greatPersonClassIndex number 
+---@param amount number 
+function PlayerGreatPeoplePoints:ChangePointsTotal(greatPersonClassIndex, amount) end
+---**Contexts:** UI
 ---
 ---*Query*
 function PlayerGreatPeoplePoints:GetPointsPerTurn() end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@param greatPersonClassID number
----@return number amount
-function PlayerGreatPeoplePoints:GetPointsTotal(greatPersonClassID) end
+---@param greatPersonClassIndex number 
+---@return number amount 
+function PlayerGreatPeoplePoints:GetPointsTotal(greatPersonClassIndex) end
 ---**Contexts:** Gameplay
 ---
 ---*Action*
 function PlayerGreatPeoplePoints:SetPointsTotal() end
----**Contexts:** Gameplay, UI
+---**Contexts:** UI
 ---
 ---*Query*
 function PlayerGreatPeoplePoints:IsNoPatronageWith() end

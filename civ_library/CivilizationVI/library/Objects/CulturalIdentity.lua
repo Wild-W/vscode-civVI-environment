@@ -11,22 +11,22 @@ CulturalIdentity.TypeName = "CulturalIdentity"
 ---**Contexts:** UI
 ---
 ---*Query*
----@return table sources
+---@return table sources 
 function CulturalIdentity:GetIdentitySourcesBreakdown() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return IdentityConversionOutcome conversionOutcome
+---@return IdentityConversionOutcome conversionOutcome 
 function CulturalIdentity:GetConversionOutcome() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return table identities
+---@return table identities 
 function CulturalIdentity:GetPlayerIdentitiesInCity() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return number amount
+---@return number amount 
 function CulturalIdentity:GetLoyaltyPerTurn() end
 ---**Contexts:** UI
 ---
@@ -35,12 +35,12 @@ function CulturalIdentity:GetGovernorIdentityPressures() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return number playerID
+---@return number playerID 
 function CulturalIdentity:GetPotentialTransferPlayer() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return table pressureBreakdown
+---@return table pressureBreakdown 
 function CulturalIdentity:GetIdentitySourcesDetailedBreakdown() end
 ---**Contexts:** UI
 ---
@@ -49,37 +49,37 @@ function CulturalIdentity:GetLoyaltyPerTurnStatus() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function CulturalIdentity:IsAlwaysFullyLoyal() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return number loyaltyLevel
+---@return number loyaltyLevel 
 function CulturalIdentity:GetLoyaltyLevel() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return table identityPressures
+---@return table identityPressures 
 function CulturalIdentity:GetCityIdentityPressures() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return number ratio
+---@return number ratio 
 function CulturalIdentity:GetLoyaltyPerTurnFromIdentityPressureRatio() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return number turns
+---@return number turns 
 function CulturalIdentity:GetTurnsToConversion() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return number amount
+---@return number amount 
 function CulturalIdentity:GetMaxLoyalty() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return number amount
+---@return number amount 
 function CulturalIdentity:GetLoyalty() end
 
 z_dontRef_types.CulturalIdentity = CulturalIdentity

@@ -11,7 +11,7 @@ WorldBuilderMapManager.TypeName = "WorldBuilderMapManager"
 ---**Contexts:** Gameplay
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function WorldBuilderMapManager:CanPlaceResource() end
 ---**Contexts:** Gameplay
 ---
@@ -24,7 +24,7 @@ function WorldBuilderMapManager:DoesPlotBorderRiver() end
 ---**Contexts:** Gameplay
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function WorldBuilderMapManager:IsImprovementPlaceable() end
 ---**Contexts:** Gameplay
 ---
@@ -33,12 +33,12 @@ function WorldBuilderMapManager:EditCliff() end
 ---**Contexts:** Gameplay
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function WorldBuilderMapManager:CanPlaceImprovement() end
 ---**Contexts:** Gameplay
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function WorldBuilderMapManager:CanPlaceFeature() end
 ---**Contexts:** Gameplay
 ---
@@ -47,7 +47,7 @@ function WorldBuilderMapManager:SetContinentType() end
 ---**Contexts:** Gameplay
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function WorldBuilderMapManager:IsWonderTooClose() end
 ---**Contexts:** Gameplay
 ---

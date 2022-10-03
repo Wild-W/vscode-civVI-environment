@@ -11,85 +11,85 @@ CacheGameEconomicManager.TypeName = "CacheGameEconomicManager"
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function CacheGameEconomicManager:IsResourceMonopoly() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@param playerID number
----@return table corporations
+---@param playerID number 
+---@return table corporations 
 function CacheGameEconomicManager:GetPlayerCorporations(playerID) end
 ---**Contexts:** UI
 ---
 ---*Query*
----@param playerID number
----@param resourceIndex number
----@return boolean
+---@param playerID number 
+---@param resourceIndex number 
+---@return boolean  
 function CacheGameEconomicManager:HasIndustry(playerID, resourceIndex) end
 ---**Contexts:** UI
 ---
 ---*Query*
----@param playerID number
----@param resourceIndex number
----@return boolean
+---@param playerID number 
+---@param resourceIndex number 
+---@return boolean  
 function CacheGameEconomicManager:CanHaveIndustry(playerID, resourceIndex) end
 ---**Contexts:** UI
 ---
 ---*Query*
----@param playerID number
----@param resourceIndex number
----@return string corpName
+---@param playerID number 
+---@param resourceIndex number 
+---@return string corpName 
 function CacheGameEconomicManager:GetCorporationName(playerID, resourceIndex) end
 ---**Contexts:** UI
 ---
 ---*Query*
----@param playerID number
----@return table industries
+---@param playerID number 
+---@return table industries 
 function CacheGameEconomicManager:GetPlayerIndustries(playerID) end
----**Contexts:** Gameplay, UI
+---**Contexts:** UI
 ---
 ---*Query*
----@param playerID number
----@param resourceIndex number
----@return boolean
+---@param playerID number 
+---@param resourceIndex number 
+---@return boolean  
 function CacheGameEconomicManager:HasCorporation(playerID, resourceIndex) end
----**Contexts:** Gameplay, UI
+---**Contexts:** UI
 ---
 ---*Query*
----@param playerID number
----@param resourceIndex number
----@return boolean
+---@param playerID number 
+---@param resourceIndex number 
+---@return boolean  
 function CacheGameEconomicManager:HasCorporationOf(playerID, resourceIndex) end
----**Contexts:** Gameplay, UI
+---**Contexts:** UI
 ---
 ---*Query*
----@param playerID number
----@param resourceIndex number
----@return number amount
+---@param playerID number 
+---@param resourceIndex number 
+---@return number amount 
 function CacheGameEconomicManager:GetNumControlledResources(playerID, resourceIndex) end
----**Contexts:** Gameplay, UI
+---**Contexts:** UI
 ---
 ---*Query*
----@param playerID number
----@param resourceIndex number
----@return boolean
+---@param playerID number 
+---@param resourceIndex number 
+---@return boolean  
 function CacheGameEconomicManager:HasIndustryOf(playerID, resourceIndex) end
----**Contexts:** Gameplay, UI
+---**Contexts:** UI
 ---
 ---*Query*
----@param resourceIndex number
----@return number playerID
+---@param resourceIndex number 
+---@return number playerID 
 function CacheGameEconomicManager:GetResourceMonopolyPlayer(resourceIndex) end
----**Contexts:** Gameplay, UI
+---**Contexts:** UI
 ---
 ---*Query*
----@param playerID number
----@param resourceIndex number
+---@param playerID number 
+---@param resourceIndex number 
 function CacheGameEconomicManager:CanHaveCorporation(playerID, resourceIndex) end
----**Contexts:** Gameplay, UI
+---**Contexts:** UI
 ---
 ---*Query*
----@return table resources
+---@return table resources 
 function CacheGameEconomicManager:GetMapResources() end
 
 z_dontRef_types.CacheGameEconomicManager = CacheGameEconomicManager

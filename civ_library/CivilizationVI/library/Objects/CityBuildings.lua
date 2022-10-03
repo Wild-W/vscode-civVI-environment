@@ -11,118 +11,118 @@ CityBuildings.TypeName = "CityBuildings"
 ---**Contexts:** UI
 ---
 ---*Query*
----@param plotID number
----@return table buildings
+---@param plotID number 
+---@return table buildings 
 function CityBuildings:GetBuildingsAtLocation(plotID) end
 ---**Contexts:** UI
 ---
 ---*Query*
----@param includingReligiousTourism boolean
----@param buildingIndex number
----@return number tourism
+---@param includingReligiousTourism boolean 
+---@param buildingIndex number 
+---@return number tourism 
 function CityBuildings:GetBuildingTourismFromGreatWorks(includingReligiousTourism, buildingIndex) end
----**Contexts:** Gameplay, UI
+---**Contexts:** UI
 ---
 ---*Query*
----@param yieldID number
----@param buildingIndex number
----@return number amount
+---@param yieldID number 
+---@param buildingIndex number 
+---@return number amount 
 function CityBuildings:GetBuildingYieldFromGreatWorks(yieldID, buildingIndex) end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return City City
+---@return City City 
 function CityBuildings:GetCity() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@param greatWorkID number
----@return string creatorName
+---@param greatWorkID number 
+---@return string creatorName 
 function CityBuildings:GetCreatorNameFromIndex(greatWorkID) end
 ---**Contexts:** UI
 ---
 ---*Query*
----@param buildingIndex number
----@param slotID number
----@return number greatWorkID
+---@param buildingIndex number 
+---@param slotID number 
+---@return number greatWorkID 
 function CityBuildings:GetGreatWorkInSlot(buildingIndex, slotID) end
----**Contexts:** Gameplay, UI
+---**Contexts:** UI
 ---
 ---*Query*
----@param buildingIndex number
----@param slotID number
----@return number slotType
+---@param buildingIndex number 
+---@param slotID number 
+---@return number slotType 
 function CityBuildings:GetGreatWorkSlotType(buildingIndex, slotID) end
 ---**Contexts:** UI
 ---
 ---*Query*
----@param greatWorkID number
----@return number greatWorkType
+---@param greatWorkID number 
+---@return number greatWorkType 
 function CityBuildings:GetGreatWorkTypeFromIndex(greatWorkID) end
 ---**Contexts:** UI
 ---
 ---*Query*
----@param buildingIndex number
----@return number greatWorkSlots
+---@param buildingIndex number 
+---@return number amount 
 function CityBuildings:GetNumGreatWorkSlots(buildingIndex) end
 ---**Contexts:** UI
 ---
 ---*Query*
----@param greatWorkID number
----@return number turn
+---@param greatWorkID number 
+---@return number turn 
 function CityBuildings:GetTurnFromIndex(greatWorkID) end
----**Contexts:** UI
----
----*Query*
----@param buildingIndex number
----@return boolean
-function CityBuildings:HasBuilding(buildingIndex) end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@param buildingIndex number
----@return boolean
-function CityBuildings:IsBuildingThemedCorrectly(buildingIndex) end
+---@param buildingIndex number 
+---@return boolean  
+function CityBuildings:HasBuilding(buildingIndex) end
 ---**Contexts:** UI
 ---
 ---*Query*
----@param buildingIndex number
----@return boolean
+---@param buildingIndex number 
+---@return boolean  
+function CityBuildings:IsBuildingThemedCorrectly(buildingIndex) end
+---**Contexts:** Gameplay, UI
+---
+---*Query*
+---@param buildingIndex number 
+---@return boolean  
 function CityBuildings:IsPillaged(buildingIndex) end
 ---**Contexts:** Gameplay
 ---
 ---*Action*
----@param buildingIndex number
+---@param buildingIndex number 
 function CityBuildings:RemoveBuilding(buildingIndex) end
 ---**Contexts:** Gameplay
 ---
 ---*Action*
----@param buildingIndex number
----@param isPillaged boolean
+---@param buildingIndex number 
+---@param isPillaged boolean 
 function CityBuildings:SetPillaged(buildingIndex, isPillaged) end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@param buildingIndex boolean
----@return number maintenanceCost
+---@param buildingIndex boolean 
+---@return number maintenanceCost 
 function CityBuildings:GetBuildingMaintenance(buildingIndex) end
 ---**Contexts:** Gameplay
 ---
 ---*Action*
----@param X number
----@param Y number
-function CityBuildings:SetBuildingLocation(X, Y) end
+---@param x number 
+---@param y number 
+function CityBuildings:SetBuildingLocation(x, y) end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@param buildingIndex number
----@return string overrideName
+---@param buildingIndex number 
+---@return string overrideName 
 function CityBuildings:GetBuildingNameOverride(buildingIndex) end
 ---**Contexts:** Gameplay
 ---
 ---*Query*
----@return number X
----@return number Y
+---@return number x 
+---@return number y 
 function CityBuildings:GetBuildingLocation() end
 ---**Contexts:** UI
 ---

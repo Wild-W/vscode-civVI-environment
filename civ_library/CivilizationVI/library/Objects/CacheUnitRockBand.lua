@@ -11,7 +11,7 @@ CacheUnitRockBand.TypeName = "CacheUnitRockBand"
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function CacheUnitRockBand:IsMaxLevel() end
 ---**Contexts:** UI
 ---
@@ -32,12 +32,12 @@ function CacheUnitRockBand:GetAlbumSales() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return Unit Unit
+---@return Unit Unit 
 function CacheUnitRockBand:GetUnit() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function CacheUnitRockBand:IsMaxPromotions() end
 
 z_dontRef_types.CacheUnitRockBand = CacheUnitRockBand

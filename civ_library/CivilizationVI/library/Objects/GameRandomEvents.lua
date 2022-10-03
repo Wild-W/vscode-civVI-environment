@@ -3,30 +3,30 @@
 
 ---**Contexts:** Gameplay, UI
 GameRandomEvents = {}
----**Contexts:** UI
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return table cities
+---@return table cities 
 function GameRandomEvents.GetCurrentAffectedCities() end
----**Contexts:** UI
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return {PopLost: number, UnitsLost: number, TilesDamaged: number, FertilityAdded: number} eventResults
+---@return {PopLost: number, UnitsLost: number, TilesDamaged: number, FertilityAdded: number} eventResults 
 function GameRandomEvents.GetCurrentTurnEvent() end
----**Contexts:** UI
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@param plotID number
----@return {PopLost: number, UnitsLost: number, TilesDamaged: number, FertilityAdded: number} eventResults
+---@param plotID number 
+---@return {PopLost: number, UnitsLost: number, TilesDamaged: number, FertilityAdded: number} eventResults 
 function GameRandomEvents.GetCurrentTurnEventAtPlot(plotID) end
----**Contexts:** UI
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@param turn number
----@return table events
+---@param turn number 
+---@return table events 
 function GameRandomEvents.GetEventsForTurn(turn) end
 ---**Contexts:** Gameplay
 ---
 ---*Action*
----@param eventParameters table
+---@param eventParameters table 
 function GameRandomEvents.ApplyEvent(eventParameters) end

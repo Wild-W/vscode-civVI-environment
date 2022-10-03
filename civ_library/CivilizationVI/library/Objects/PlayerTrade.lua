@@ -1,18 +1,18 @@
 ---@meta
 
 
----**Contexts:** UI
+---**Contexts:** Gameplay, UI
 ---@class PlayerTrade
 local PlayerTrade = {}
 ---@type table<userdata, table>
 PlayerTrade.__instances = {}
 ---Name of the object's class; differs between UI and Gameplay context
 PlayerTrade.TypeName = "PlayerTrade"
----**Contexts:** UI
+---**Contexts:** Gameplay
 ---
 ---*Query*
 function PlayerTrade:CountOutgoingRoutes() end
----**Contexts:** Gameplay, UI
+---**Contexts:** UI
 ---
 ---*Query*
 function PlayerTrade:GetLandRangeRefuel() end
@@ -32,7 +32,7 @@ function PlayerTrade:GetWaterRangeRefuel() end
 ---
 ---*Query*
 function PlayerTrade:CalcFavorPerTurnFromTradePartners() end
----**Contexts:** Gameplay, UI
+---**Contexts:** UI
 ---
 ---*Query*
 function PlayerTrade:GetInternationalYieldModifier() end

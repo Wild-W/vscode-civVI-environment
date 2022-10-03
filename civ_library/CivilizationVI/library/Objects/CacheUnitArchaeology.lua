@@ -11,7 +11,7 @@ CacheUnitArchaeology.TypeName = "CacheUnitArchaeology"
 ---**Contexts:** UI
 ---
 ---*Query*
----@return Unit Unit
+---@return Unit Unit 
 function CacheUnitArchaeology:GetUnit() end
 ---**Contexts:** UI
 ---

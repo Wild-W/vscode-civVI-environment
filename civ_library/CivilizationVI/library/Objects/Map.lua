@@ -6,10 +6,10 @@ Map = {}
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@param Plot Plot
----@param range number
----@param isFreshwater boolean
----@return boolean
+---@param Plot Plot 
+---@param range number 
+---@param isFreshwater boolean 
+---@return boolean  
 function Map.FindWater(Plot, range, isFreshwater) end
 ---**Contexts:** Gameplay, UI
 ---
@@ -18,7 +18,7 @@ function Map.GetAdjacentPlot() end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return CityPlots CityPlots
+---@return CityPlots CityPlots 
 function Map.GetCityPlots() end
 ---**Contexts:** Gameplay, UI
 ---
@@ -47,7 +47,7 @@ function Map.GetGridSize() end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Action*
----@return MapImprovementBuilder MapImprovementBuilder
+---@return MapImprovementBuilder MapImprovementBuilder 
 function Map.GetImprovementBuilder() end
 ---**Contexts:** Gameplay, UI
 ---
@@ -60,7 +60,7 @@ function Map.GetLandResourceCount() end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return number mapSizeIndex
+---@return number mapSizeIndex 
 function Map.GetMapSize() end
 ---**Contexts:** Gameplay, UI
 ---
@@ -68,13 +68,16 @@ function Map.GetMapSize() end
 function Map.GetMaxPlotDistance() end
 ---**Contexts:** Gameplay, UI
 ---
----*Query*
-function Map.GetPlot() end
+---*Action*
+---@param x number 
+---@param y number 
+---@return Plot Plot 
+function Map.GetPlot(x, y) end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@param plotID number
----@return Plot Plot
+---@param plotID number 
+---@return Plot Plot 
 function Map.GetPlotByIndex(plotID) end
 ---**Contexts:** Gameplay, UI
 ---
@@ -83,7 +86,12 @@ function Map.GetPlotCount() end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
-function Map.GetPlotDistance() end
+---@param plot1X number 
+---@param plot1Y number 
+---@param plot2X number 
+---@param plot2Y number 
+---@return number tileDistance 
+function Map.GetPlotDistance(plot1X, plot1Y, plot2X, plot2Y) end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
@@ -115,45 +123,45 @@ function Map.IsPlot() end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Map.IsWrapX() end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Map.IsWrapY() end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@param Plot Plot
----@return Unit[] units
+---@param Plot Plot 
+---@return Unit[] units 
 function Map.GetUnitsAt(Plot) end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@param Plot Plot
----@param unknown number
----@return boolean
+---@param Plot Plot 
+---@param unknown number 
+---@return boolean  
 function Map.FindSecondContinent(Plot, unknown) end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return Plot[] plots
+---@return Plot[] plots 
 function Map.GetContinentPlotsLoyalty() end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@param X number
----@param Y number
----@return Plot[] plots
-function Map.GetAdjacentPlots(X, Y) end
+---@param x number 
+---@param y number 
+---@return Plot[] plots 
+function Map.GetAdjacentPlots(x, y) end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@param X number
----@param Y number
----@param range number
-function Map.GetNeighborPlots(X, Y, range) end
+---@param x number 
+---@param y number 
+---@param range number 
+function Map.GetNeighborPlots(x, y, range) end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
@@ -161,14 +169,14 @@ function Map.GetWorldSize() end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@param featureIndex number
----@return number amount
+---@param featureIndex number 
+---@return number amount 
 function Map.GetFeatureCount(featureIndex) end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@param X number
----@param Y number
----@param ringLevel number
----@return Plot[] plots
-function Map.GetRingPlots(X, Y, ringLevel) end
+---@param x number 
+---@param y number 
+---@param ringLevel number 
+---@return Plot[] plots 
+function Map.GetRingPlots(x, y, ringLevel) end

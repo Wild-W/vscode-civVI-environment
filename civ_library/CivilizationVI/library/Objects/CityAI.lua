@@ -11,13 +11,13 @@ CityAI.TypeName = "CityAI"
 ---**Contexts:** UI
 ---
 ---*Query*
----@return table recommendations
+---@return table recommendations 
 function CityAI:GetBuildRecommendations() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@param Unit Unit
----@return table recommendations
+---@param Unit Unit 
+---@return table recommendations 
 function CityAI:GetImprovementRecommendationsForBuilder(Unit) end
 ---**Contexts:** UI
 ---

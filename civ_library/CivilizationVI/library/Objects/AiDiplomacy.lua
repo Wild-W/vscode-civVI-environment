@@ -12,10 +12,6 @@ AiDiplomacy.TypeName = "AiDiplomacy"
 ---
 ---*Action*
 function AiDiplomacy:AdjustBaseDiplomacy() end
----**Contexts:** Gameplay
----
----*Action*
-function AiDiplomacy:GenerateToolTips() end
 ---**Contexts:** UI
 ---
 ---*Query*
@@ -28,14 +24,6 @@ function AiDiplomacy:GetDiplomaticScore() end
 ---
 ---*Query*
 function AiDiplomacy:GetDiplomaticState() end
----**Contexts:** Gameplay
----
----*Query*
-function AiDiplomacy:GetNumToolTips() end
----**Contexts:** Gameplay
----
----*Query*
-function AiDiplomacy:GetToolTip() end
 ---**Contexts:** Gameplay
 ---
 ---*Query*

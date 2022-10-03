@@ -14,7 +14,7 @@ function Path.NormalizePath() end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Path.UsesExtension() end
 ---**Contexts:** Gameplay, UI
 ---

@@ -8,36 +8,36 @@ local CityGold = {}
 CityGold.__instances = {}
 ---Name of the object's class; differs between UI and Gameplay context
 CityGold.TypeName = "CityGold"
----**Contexts:** Gameplay, UI
+---**Contexts:** UI
 ---
 ---*Query*
----@param plotID number
----@return number cost
+---@param plotID number 
+---@return number cost 
 function CityGold:GetPlotPurchaseCost(plotID) end
----**Contexts:** Gameplay, UI
+---**Contexts:** UI
 ---
 ---*Query*
----@param yieldID number
----@param any_DistrictUnitBuildingHash number
----@param formationType MilitaryFormationTypes
----@return number cost
+---@param yieldID number 
+---@param any_DistrictUnitBuildingHash number 
+---@param formationType MilitaryFormationTypes 
+---@return number cost 
 function CityGold:GetPurchaseCost(yieldID, any_DistrictUnitBuildingHash, formationType) end
 ---**Contexts:** UI
 ---
 ---*Query*
----@param buildingHash number
----@return boolean
+---@param buildingHash number 
+---@return boolean  
 function CityGold:IsBuildingFaithPurchaseEnabled(buildingHash) end
----**Contexts:** Gameplay, UI
+---**Contexts:** UI
 ---
 ---*Query*
----@param unitHash number
----@return boolean
+---@param unitHash number 
+---@return boolean  
 function CityGold:IsUnitFaithPurchaseEnabled(unitHash) end
----**Contexts:** Gameplay, UI
+---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function CityGold:CanPlaceUnit() end
 
 z_dontRef_types.CityGold = CityGold

@@ -6,12 +6,12 @@ Locale = {}
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return table langInfo
+---@return table langInfo 
 function Locale.GetCurrentLanguage() end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Locale.IsUTF8() end
 ---**Contexts:** Gameplay, UI
 ---
@@ -20,12 +20,12 @@ function Locale.Compare() end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Locale.IsASCII() end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Locale.IsNilOrWhitespace() end
 ---**Contexts:** Gameplay, UI
 ---
@@ -34,7 +34,7 @@ function Locale.StripTags() end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Locale.IsNilOrEmpty() end
 ---**Contexts:** Gameplay, UI
 ---
@@ -67,7 +67,7 @@ function Locale.ToSpellout() end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Action*
----@return string romanNumerals
+---@return string romanNumerals 
 function Locale.ToRomanNumeral() end
 ---**Contexts:** Gameplay, UI
 ---
@@ -80,7 +80,7 @@ function Locale.SubString() end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Locale.IsValidKey() end
 ---**Contexts:** Gameplay, UI
 ---
@@ -97,7 +97,7 @@ function Locale.ToNumber() end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Locale.EndsWith() end
 ---**Contexts:** Gameplay, UI
 ---
@@ -106,7 +106,11 @@ function Locale.GetLanguages() end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
-function Locale.Lookup() end
+---
+---Replaces occurances of LOC_ tags with localized text from the Localization DB.
+---@param text string 
+---@return string localizedText 
+function Locale.Lookup(text) end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Action*
@@ -122,16 +126,16 @@ function Locale.Bundle() end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Locale.HasTextKey() end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Locale.StartsWith() end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@param name string
----@return string text
+---@param name string 
+---@return string text 
 function Locale.LookupBundle(name) end

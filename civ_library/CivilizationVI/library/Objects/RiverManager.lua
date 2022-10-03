@@ -6,7 +6,7 @@ RiverManager = {}
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function RiverManager.CanBeFlooded() end
 ---**Contexts:** Gameplay, UI
 ---
@@ -15,8 +15,8 @@ function RiverManager.EnumerateRivers() end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@param riverID number
----@return Plot[] plots
+---@param riverID number 
+---@return Plot[] plots 
 function RiverManager.GetFloodplainPlots(riverID) end
 ---**Contexts:** Gameplay, UI
 ---
@@ -29,10 +29,10 @@ function RiverManager.GetNumRivers() end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@param X number
----@param Y number
----@return number riverID
-function RiverManager.GetRiverForFloodplain(X, Y) end
+---@param x number 
+---@param y number 
+---@return number riverID 
+function RiverManager.GetRiverForFloodplain(x, y) end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
@@ -76,7 +76,7 @@ function RiverManager.GetRiverByID() end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function RiverManager.IsFlooded() end
 ---**Contexts:** Gameplay, UI
 ---

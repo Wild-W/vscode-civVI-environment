@@ -103,6 +103,7 @@ function Notification:GetSeverity() end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
+---@return boolean  
 function Notification:AutoExpires() end
 ---**Contexts:** Gameplay, UI
 ---

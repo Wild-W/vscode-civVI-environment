@@ -10,27 +10,27 @@ function UserConfiguration.ShowMapLabelsRivers() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function UserConfiguration.IsCityRangeAttackTurnBlocking() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function UserConfiguration.GetShowCivicsTreeKey() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function UserConfiguration.IsQuickMovement() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return number chatTextSize
+---@return number chatTextSize 
 function UserConfiguration.GetChatTextValue() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function UserConfiguration.IsAutoUnitCycle() end
 ---**Contexts:** UI
 ---
@@ -51,13 +51,13 @@ function UserConfiguration.ShowMapLabelsNaturalWonders() end
 ---**Contexts:** UI
 ---
 ---*Action*
----@param userConfig string
----@param isLocked boolean
+---@param userConfig string 
+---@param isLocked boolean 
 function UserConfiguration.LockValue(userConfig, isLocked) end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function UserConfiguration.IsEdgePanEnabled() end
 ---**Contexts:** UI
 ---
@@ -82,7 +82,7 @@ function UserConfiguration.SetLockedValue() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function UserConfiguration.IsAutoEndTurn() end
 ---**Contexts:** UI
 ---
@@ -171,7 +171,7 @@ function UserConfiguration.NoBasicHelp() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function UserConfiguration.IsValueLocked() end
 ---**Contexts:** UI
 ---
@@ -200,17 +200,17 @@ function UserConfiguration.GetPlotTooltipDelay() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function UserConfiguration.IsQuickCombat() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function UserConfiguration.IsAutoProdQueueEnabled() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function UserConfiguration.TutorialLevel() end
 ---**Contexts:** UI
 ---

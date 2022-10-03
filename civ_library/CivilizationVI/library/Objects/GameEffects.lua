@@ -6,60 +6,60 @@ GameEffects = {}
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@param modifierID number
----@return boolean
+---@param modifierID number 
+---@return boolean  
 function GameEffects.GetModifierActive(modifierID) end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@param modifierID number
----@return string argStr
+---@param modifierID number 
+---@return string argStr 
 function GameEffects.GetModifierArgumentString(modifierID) end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return number amount
+---@return number amount 
 function GameEffects.GetModifierCount() end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@param modifierID number
----@return table modifierDef
+---@param modifierID number 
+---@return table modifierDef 
 function GameEffects.GetModifierDefinition(modifierID) end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@param modifierID number
----@return number playerID
+---@param modifierID number 
+---@return number playerID 
 function GameEffects.GetModifierOwner(modifierID) end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@param modifierID number
----@return table ownerRequirements
+---@param modifierID number 
+---@return table ownerRequirements 
 function GameEffects.GetModifierOwnerRequirementSet(modifierID) end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@param modifierID number
----@return number amount
+---@param modifierID number 
+---@return number amount 
 function GameEffects.GetModifierReferenceCount(modifierID) end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return integer[] modifiers
+---@return integer[] modifiers 
 function GameEffects.GetModifiers() end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@param modifierID number
----@return number amount
+---@param modifierID number 
+---@return number amount 
 function GameEffects.GetModifierSubjectCount(modifierID) end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@param modifierID number
----@return table subjects
+---@param modifierID number 
+---@return table subjects 
 function GameEffects.GetModifierSubjects(modifierID) end
 ---**Contexts:** Gameplay, UI
 ---
@@ -84,8 +84,8 @@ function GameEffects.GetModifierTrackedOjectRequirementSet() end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@param playerID number
----@return string objName
+---@param playerID number 
+---@return string objName 
 function GameEffects.GetObjectName(playerID) end
 ---**Contexts:** Gameplay, UI
 ---

@@ -12,7 +12,7 @@ PlayerResources.TypeName = "PlayerResources"
 ---
 ---*Query*
 function PlayerResources:GetBonusResourcePerTurn() end
----**Contexts:** Gameplay, UI
+---**Contexts:** UI
 ---
 ---*Query*
 function PlayerResources:GetExportedResourceAmount() end
@@ -28,14 +28,10 @@ function PlayerResources:GetReservedResourceAmount() end
 ---
 ---*Query*
 function PlayerResources:GetResourceAccumulationPerTurn() end
----**Contexts:** UI
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
 function PlayerResources:GetResourceAmount() end
----**Contexts:** UI
----
----*Query*
-function PlayerResources:GetResourceImportedPerTurn() end
 ---**Contexts:** UI
 ---
 ---*Query*
@@ -43,9 +39,9 @@ function PlayerResources:GetResourceStockpileCap() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@param resourceID number
----@return number amount
-function PlayerResources:GetUnitResourceDemandPerTurn(resourceID) end
+---@param resourceIndex number 
+---@return number amount 
+function PlayerResources:GetUnitResourceDemandPerTurn(resourceIndex) end
 ---**Contexts:** UI
 ---
 ---*Query*
@@ -85,6 +81,8 @@ function PlayerResources:GetResourceAllocationCities() end
 ---**Contexts:** Gameplay
 ---
 ---*Action*
-function PlayerResources:ChangeResourceAmount() end
+---@param resourceIndex number 
+---@param amount number 
+function PlayerResources:ChangeResourceAmount(resourceIndex, amount) end
 
 z_dontRef_types.PlayerResources = PlayerResources

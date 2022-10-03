@@ -6,10 +6,11 @@ MapRoutes = {}
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return number amount
+---@return number amount 
 function MapRoutes.GetPortalCount() end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return Portal Portal
-function MapRoutes.GetIndexedPortal() end
+---@param portalID number 
+---@return Portal Portal 
+function MapRoutes.GetIndexedPortal(portalID) end

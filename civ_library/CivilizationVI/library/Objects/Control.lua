@@ -63,12 +63,12 @@ function Control:SetNoClip() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Control:IsHidden() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Control:IsVisible() end
 ---**Contexts:** UI
 ---
@@ -189,7 +189,7 @@ function Control:SetDisabled() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Control:IsDisabled() end
 ---**Contexts:** UI
 ---
@@ -198,7 +198,7 @@ function Control:SetEnabled() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Control:IsEnabled() end
 ---**Contexts:** UI
 ---
@@ -207,7 +207,7 @@ function Control:SetModal() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Control:IsModal() end
 ---**Contexts:** UI
 ---
@@ -232,7 +232,7 @@ function Control:ClearToolTipCallback() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Control:IsToolTipEnabled() end
 ---**Contexts:** UI
 ---
@@ -277,7 +277,7 @@ function Control:Reparent() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Control:HasMouseOver() end
 ---**Contexts:** UI
 ---

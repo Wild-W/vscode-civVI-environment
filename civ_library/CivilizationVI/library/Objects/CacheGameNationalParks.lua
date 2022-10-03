@@ -1,51 +1,51 @@
 ---@meta
 
 
----**Contexts:** Gameplay, UI
+---**Contexts:** UI
 ---@class CacheGameNationalParks
 local CacheGameNationalParks = {}
 ---@type table<userdata, table>
 CacheGameNationalParks.__instances = {}
 ---Name of the object's class; differs between UI and Gameplay context
 CacheGameNationalParks.TypeName = "CacheGameNationalParks"
----**Contexts:** Gameplay, UI
+---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function CacheGameNationalParks.IsNationalPark() end
----**Contexts:** Gameplay, UI
+---**Contexts:** UI
 ---
 ---*Query*
----@param playerID number
----@return Plot[] plots
+---@param playerID number 
+---@return Plot[] plots 
 function CacheGameNationalParks.GetPossibleParkTiles(playerID) end
----**Contexts:** Gameplay, UI
+---**Contexts:** UI
 ---
 ---*Query*
----@return string name
+---@return string name 
 function CacheGameNationalParks.GetNationalParkName() end
----**Contexts:** Gameplay, UI
+---**Contexts:** UI
 ---
 ---*Query*
----@return table nationalParks
+---@return table nationalParks 
 function CacheGameNationalParks.EnumerateNationalParks() end
----**Contexts:** Gameplay, UI
+---**Contexts:** UI
 ---
 ---*Query*
----@param X number
----@param Y number
----@return table nationalParkInfo
-function CacheGameNationalParks.GetAtLocation(X, Y) end
----**Contexts:** Gameplay, UI
+---@param x number 
+---@param y number 
+---@return table nationalParkInfo 
+function CacheGameNationalParks.GetAtLocation(x, y) end
+---**Contexts:** UI
 ---
 ---*Query*
----@param plotID number
----@return table nationalParkInfo
+---@param plotID number 
+---@return table nationalParkInfo 
 function CacheGameNationalParks.GetAtIndex(plotID) end
----**Contexts:** Gameplay, UI
+---**Contexts:** UI
 ---
 ---*Query*
----@return number amount
+---@return number amount 
 function CacheGameNationalParks.GetCount() end
 
 z_dontRef_types.CacheGameNationalParks = CacheGameNationalParks

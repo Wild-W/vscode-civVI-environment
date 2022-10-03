@@ -1,5 +1,6 @@
 ---@meta
 
+
 PlayersVisibility = {
     ---@type PlayerVisibility
     [1] = {},
@@ -395,3 +396,5 @@ Teams = {}
 MapModData = {}
 GameCoreState = {}
 StateName = "lua context name (file name)"
+---@type table<string, Control>
+Controls = {}

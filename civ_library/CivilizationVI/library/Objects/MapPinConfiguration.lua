@@ -11,63 +11,63 @@ MapPinConfiguration.TypeName = "MapPinConfiguration"
 ---**Contexts:** UI
 ---
 ---*Query*
----@return string iconName
+---@return string iconName 
 function MapPinConfiguration:GetIconName() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return number Y
+---@return number y 
 function MapPinConfiguration:GetHexY() end
 ---**Contexts:** UI
 ---
 ---*Action*
----@param chatTargetType ChatTargetTypes
+---@param chatTargetType ChatTargetTypes 
 function MapPinConfiguration:SetVisibility(chatTargetType) end
 ---**Contexts:** UI
 ---
 ---*Action*
----@param iconName string
+---@param iconName string 
 function MapPinConfiguration:SetIconName(iconName) end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return number X
+---@return number x 
 function MapPinConfiguration:GetHexX() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function MapPinConfiguration:IsPrivate() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@param playerID number
----@return boolean
+---@param playerID number 
+---@return boolean  
 function MapPinConfiguration:IsVisible(playerID) end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return ChatTargetTypes chatTargetType
+---@return ChatTargetTypes chatTargetType 
 function MapPinConfiguration:GetVisibility() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return number playerID
+---@return number playerID 
 function MapPinConfiguration:GetPlayerID() end
 ---**Contexts:** UI
 ---
 ---*Action*
----@param name string
+---@param name string 
 function MapPinConfiguration:SetName(name) end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return number pinID
+---@return number pinID 
 function MapPinConfiguration:GetID() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return string name
+---@return string name 
 function MapPinConfiguration:GetName() end
 
 z_dontRef_types.MapPinConfiguration = MapPinConfiguration

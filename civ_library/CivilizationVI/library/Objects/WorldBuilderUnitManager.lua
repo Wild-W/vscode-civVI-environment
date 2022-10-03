@@ -11,24 +11,24 @@ WorldBuilderUnitManager.TypeName = "WorldBuilderUnitManager"
 ---**Contexts:** Gameplay
 ---
 ---*Action*
----@param unitIndex number
----@param playerID number
----@param Plot Plot
+---@param unitIndex number 
+---@param playerID number 
+---@param Plot Plot 
 function WorldBuilderUnitManager:Create(unitIndex, playerID, Plot) end
 ---**Contexts:** Gameplay
 ---
 ---*Action*
----@param Unit Unit
+---@param Unit Unit 
 function WorldBuilderUnitManager:Remove(Unit) end
 ---**Contexts:** Gameplay
 ---
 ---*Action*
----@param playerID number
+---@param playerID number 
 function WorldBuilderUnitManager:RemoveAll(playerID) end
 ---**Contexts:** Gameplay
 ---
 ---*Action*
----@param Plot Plot
+---@param Plot Plot 
 function WorldBuilderUnitManager:RemoveAt(Plot) end
 
 z_dontRef_types.WorldBuilderUnitManager = WorldBuilderUnitManager

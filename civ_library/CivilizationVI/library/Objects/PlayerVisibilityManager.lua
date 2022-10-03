@@ -6,11 +6,11 @@ PlayerVisibilityManager = {}
 ---**Contexts:** UI
 ---
 ---*Query*
----@param playerID number
----@return PlayerVisibility PlayerVisibility
+---@param playerID number 
+---@return PlayerVisibility PlayerVisibility 
 function PlayerVisibilityManager.GetPlayerVisibility(playerID) end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function PlayerVisibilityManager.IsVisibleToNonOwner() end

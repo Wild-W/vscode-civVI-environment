@@ -1,7 +1,7 @@
 ---@meta
 
 
----**Contexts:** Gameplay
+---**Contexts:** Gameplay, UI
 ---@class PlayerTreasury
 local PlayerTreasury = {}
 ---@type table<userdata, table>
@@ -12,43 +12,43 @@ PlayerTreasury.TypeName = "PlayerTreasury"
 ---
 ---*Query*
 function PlayerTreasury:CanAfford() end
----**Contexts:** UI
+---**Contexts:** Gameplay
 ---
 ---*Action*
 function PlayerTreasury:ChangeGoldBalance() end
----**Contexts:** Gameplay
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
 function PlayerTreasury:GetBuildingMaintenance() end
----**Contexts:** UI
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
 function PlayerTreasury:GetDistrictMaintenance() end
----**Contexts:** Gameplay
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
 function PlayerTreasury:GetGoldBalance() end
----**Contexts:** Gameplay
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
 function PlayerTreasury:GetGoldYield() end
----**Contexts:** Gameplay
+---**Contexts:** UI
 ---
 ---*Query*
 function PlayerTreasury:GetGoldYieldToolTip() end
----**Contexts:** Gameplay
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
 function PlayerTreasury:GetTotalMaintenance() end
----**Contexts:** Gameplay
+---**Contexts:** UI
 ---
 ---*Query*
 function PlayerTreasury:GetTotalMaintenanceToolTip() end
----**Contexts:** Gameplay
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
 function PlayerTreasury:GetUnitMaintenance() end
----**Contexts:** Gameplay
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
 function PlayerTreasury:GetWMDMaintenance() end

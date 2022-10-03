@@ -11,7 +11,7 @@ CacheGameTechs.TypeName = "CacheGameTechs"
 ---**Contexts:** UI
 ---
 ---*Query*
----@return table techNodes
+---@return table techNodes 
 function CacheGameTechs:GetActiveTechNodes() end
 
 z_dontRef_types.CacheGameTechs = CacheGameTechs

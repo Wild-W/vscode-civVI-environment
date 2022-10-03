@@ -8,37 +8,37 @@ local UnitAbility = {}
 UnitAbility.__instances = {}
 ---Name of the object's class; differs between UI and Gameplay context
 UnitAbility.TypeName = "UnitAbility"
----**Contexts:** UI
+---**Contexts:** Gameplay
 ---
 ---*Query*
----@param unitAbilityType string
----@return boolean
+---@param unitAbilityType string 
+---@return boolean  
 function UnitAbility:HasAbility(unitAbilityType) end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@return integer[] unitAbilityIndexes
+---@return integer[] unitAbilityIndexes 
 function UnitAbility:GetAbilities() end
----**Contexts:** UI
+---**Contexts:** Gameplay
 ---
 ---*Query*
 function UnitAbility:RemoveAbilityCount() end
----**Contexts:** UI
+---**Contexts:** Gameplay
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function UnitAbility:CanHaveAbility() end
----**Contexts:** UI
+---**Contexts:** Gameplay
 ---
----*Query*
+---*Action*
 function UnitAbility:ChangeAbilityCount() end
----**Contexts:** UI
+---**Contexts:** Gameplay
 ---
 ---*Query*
 function UnitAbility:GetAbilityCount() end
----**Contexts:** UI
+---**Contexts:** Gameplay
 ---
----*Query*
+---*Action*
 function UnitAbility:AddAbilityCount() end
 
 z_dontRef_types.UnitAbility = UnitAbility

@@ -6,8 +6,8 @@ AssetPreview = {}
 ---**Contexts:** UI
 ---
 ---*Query*
----@param districtID number
----@return table buildings
+---@param districtID number 
+---@return table buildings 
 function AssetPreview.GetDistrictBuildingList(districtID) end
 ---**Contexts:** UI
 ---
@@ -16,13 +16,13 @@ function AssetPreview.DestroyAll() end
 ---**Contexts:** UI
 ---
 ---*Action*
----@param X number
----@param Y number
-function AssetPreview.ClearLandmarkAt(X, Y) end
+---@param x number 
+---@param y number 
+function AssetPreview.ClearLandmarkAt(x, y) end
 ---**Contexts:** UI
 ---
 ---*Query*
----@param instanceID number
+---@param instanceID number 
 function AssetPreview.GetInstanceInfoByID(instanceID) end
 ---**Contexts:** UI
 ---
@@ -47,12 +47,12 @@ function AssetPreview.GetDistrictBaseList() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return number amount
+---@return number amount 
 function AssetPreview.GetLandmarkCount() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return number amount
+---@return number amount Number of 3D asset XLP entries
 function AssetPreview.GetAssetCount() end
 ---**Contexts:** UI
 ---
@@ -77,14 +77,14 @@ function AssetPreview.GetUnitList() end
 ---**Contexts:** UI
 ---
 ---*Action*
----@param text string
----@return number hash
+---@param text string 
+---@return number hash 
 function AssetPreview.MakeHash(text) end
 ---**Contexts:** UI
 ---
 ---*Query*
----@param civilizationHash number
----@return string name
+---@param civilizationHash number 
+---@return string name 
 function AssetPreview.GetCivName(civilizationHash) end
 ---**Contexts:** UI
 ---

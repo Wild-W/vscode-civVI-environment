@@ -1,7 +1,7 @@
 ---@meta
 
 
----**Contexts:** Gameplay
+---**Contexts:** UI
 ---@class Culture
 local Culture = {}
 ---@type table<userdata, table>
@@ -11,37 +11,37 @@ Culture.TypeName = "Culture"
 ---**Contexts:** UI
 ---
 ---*Query*
----@return number yield
+---@return number yield 
 function Culture:GetCultureYield() end
----**Contexts:** Gameplay, UI
+---**Contexts:** UI
 ---
 ---*Query*
----@return number currentCulture
+---@return number currentCulture 
 function Culture:GetCurrentCulture() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return Plot Plot
+---@return Plot Plot 
 function Culture:GetNextPlot() end
----**Contexts:** Gameplay
+---**Contexts:** UI
 ---
 ---*Query*
----@return number cost
+---@return number cost 
 function Culture:GetNextPlotCultureCost() end
----**Contexts:** Gameplay
+---**Contexts:** UI
 ---
 ---*Query*
----@return number turns
+---@return number turns 
 function Culture:GetTurnsUntilExpansion() end
----**Contexts:** Gameplay
+---**Contexts:** UI
 ---
 ---*Query*
----@return City City
+---@return City City 
 function Culture:GetCity() end
----**Contexts:** Gameplay
+---**Contexts:** UI
 ---
 ---*Query*
----@return number amount
+---@return number amount 
 function Culture:GetTourism() end
 
 z_dontRef_types.Culture = Culture

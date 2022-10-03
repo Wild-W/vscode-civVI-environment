@@ -8,25 +8,25 @@ local QuestsManager = {}
 QuestsManager.__instances = {}
 ---Name of the object's class; differs between UI and Gameplay context
 QuestsManager.TypeName = "QuestsManager"
----**Contexts:** Gameplay, UI
+---**Contexts:** UI
 ---
 ---*Query*
 function QuestsManager:GetActiveQuestDescription() end
----**Contexts:** Gameplay, UI
+---**Contexts:** UI
 ---
 ---*Query*
 function QuestsManager:GetActiveQuestName() end
----**Contexts:** Gameplay, UI
+---**Contexts:** UI
 ---
 ---*Query*
 function QuestsManager:GetActiveQuestReward() end
 ---**Contexts:** Gameplay, UI
 ---
 ---*Query*
----@param playerID number
----@param minorID number
----@param questType string
----@return boolean
+---@param playerID number 
+---@param minorID number 
+---@param questType string 
+---@return boolean  
 function QuestsManager:HasActiveQuestFromPlayer(playerID, minorID, questType) end
 
 z_dontRef_types.QuestsManager = QuestsManager

@@ -6,7 +6,7 @@ UI = {}
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function UI.IsUnitSelected() end
 ---**Contexts:** UI
 ---
@@ -15,12 +15,12 @@ function UI.SetFixedTiltMode() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function UI.HasOutdatedDriver() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return TypedDataVariantParameters TypedDataVariantParameters
+---@return TypedDataVariantParameters TypedDataVariantParameters 
 function UI.GetGameParameters() end
 ---**Contexts:** UI
 ---
@@ -45,7 +45,7 @@ function UI.GetMapZoom() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function UI.Is2KCloudAvailable() end
 ---**Contexts:** UI
 ---
@@ -53,8 +53,11 @@ function UI.Is2KCloudAvailable() end
 function UI.SetMapZoom() end
 ---**Contexts:** UI
 ---
----*Query*
-function UI.MapSearch_LogEnd() end
+---*Action*
+---
+---Prints a message to MapSearch.log.
+---@param message string 
+function UI.MapSearch_LogEnd(message) end
 ---**Contexts:** UI
 ---
 ---*Action*
@@ -62,7 +65,12 @@ function UI.SetLeaderPosition() end
 ---**Contexts:** UI
 ---
 ---*Query*
-function UI.GridToWorld() end
+---@param mapX number 
+---@param mapY number 
+---@return number worldX 
+---@return number worldY 
+---@return number worldZ 
+function UI.GridToWorld(mapX, mapY) end
 ---**Contexts:** UI
 ---
 ---*Query*
@@ -106,7 +114,10 @@ function UI.OnNaturalWonderRevealed() end
 ---**Contexts:** UI
 ---
 ---*Action*
-function UI.DebugCommand() end
+---
+---Same as Autoprofiler.RunCommand; runs a command in the debug console
+---@param command string See https://docs.google.com/document/d/1nb2VnsaCdLU4arKtzU0kHv5WtMRT3c6krpl9nOam3XU
+function UI.DebugCommand(command) end
 ---**Contexts:** UI
 ---
 ---*Action*
@@ -134,7 +145,7 @@ function UI.SelectClosestReadyUnit() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function UI.IsInFrontEnd() end
 ---**Contexts:** UI
 ---
@@ -219,7 +230,7 @@ function UI.HasSentTurnComplete() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function UI.IsWorldRenderViewAvailable() end
 ---**Contexts:** UI
 ---
@@ -260,12 +271,12 @@ function UI.StopInGameMusic() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function UI.IsARXDisplayPortrait() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function UI.IsFileListQueryComplete() end
 ---**Contexts:** UI
 ---
@@ -274,7 +285,7 @@ function UI.DeselectUnit() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function UI.IsResyncLoadInProgress() end
 ---**Contexts:** UI
 ---
@@ -315,9 +326,9 @@ function UI.ApplyFileQueryLeaderImage() end
 ---**Contexts:** UI
 ---
 ---*Action*
----@param X number
----@param Y number
-function UI.SetMinimapSize(X, Y) end
+---@param x number 
+---@param y number 
+function UI.SetMinimapSize(x, y) end
 ---**Contexts:** UI
 ---
 ---*Action*
@@ -333,7 +344,7 @@ function UI.GetLookAtTimeScale() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function UI.IsInMarketingMode() end
 ---**Contexts:** UI
 ---
@@ -374,17 +385,13 @@ function UI.SetWorldRenderView() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function UI.IsInGame() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function UI.CanEndTurn() end
----**Contexts:** UI
----
----*Action*
-function UI.ZoomMap() end
 ---**Contexts:** UI
 ---
 ---*Query*
@@ -416,17 +423,17 @@ function UI.HotReloadSounds() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function UI.IsAmbientTimeOfDayAnimating() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function UI.IsAnyModalInterfaceVisible() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function UI.IsTurnTimerElapsed() end
 ---**Contexts:** UI
 ---
@@ -463,7 +470,7 @@ function UI.GetSaveGameModificationTimeRaw() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function UI.IsGameCoreBusy() end
 ---**Contexts:** UI
 ---
@@ -489,10 +496,6 @@ function UI.SelectNextCity() end
 ---
 ---*Query*
 function UI.GetPathLevels() end
----**Contexts:** UI
----
----*Action*
-function UI.ExitGame() end
 ---**Contexts:** UI
 ---
 ---*Query*
@@ -524,7 +527,7 @@ function UI.SetSoundSwitchValue() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function UI.IsVendorNVIDIA() end
 ---**Contexts:** UI
 ---
@@ -568,10 +571,6 @@ function UI.QueryGlobalParameterInt() end
 function UI.RestoreMapZoom() end
 ---**Contexts:** UI
 ---
----*Action*
-function UI.DataAssert() end
----**Contexts:** UI
----
 ---*Query*
 function UI.GetColors() end
 ---**Contexts:** UI
@@ -581,6 +580,7 @@ function UI.UnloadSoundBankGroup() end
 ---**Contexts:** UI
 ---
 ---*Query*
+---@return boolean  
 function UI.HasUnknownDevice() end
 ---**Contexts:** UI
 ---
@@ -597,7 +597,7 @@ function UI.SetLeaderImageControl() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function UI.IsPlayersLeaderAnimated() end
 ---**Contexts:** UI
 ---
@@ -606,7 +606,7 @@ function UI.DeselectUnitID() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function UI.IsVendorAMD() end
 ---**Contexts:** UI
 ---
@@ -636,10 +636,6 @@ function UI.HasUnsupportedDevice() end
 ---
 ---*Query*
 function UI.GetSaveLocationPath() end
----**Contexts:** UI
----
----*Query*
-function UI.GetWorldFromNormalizedScr() end
 ---**Contexts:** UI
 ---
 ---*Query*
@@ -683,7 +679,7 @@ function UI.RebuildColorDB() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function UI.IsDistrictIDSelected() end
 ---**Contexts:** UI
 ---
@@ -692,12 +688,12 @@ function UI.PlaySound() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function UI.IsMovementPathOn() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function UI.IsFullscreenMapEnabled() end
 ---**Contexts:** UI
 ---
@@ -718,7 +714,7 @@ function UI.SetAmbienceClipDistance() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function UI.IsAnyPopupInterfaceVisible() end
 ---**Contexts:** UI
 ---
@@ -727,7 +723,7 @@ function UI.GetElapsedTime() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function UI.LeaderQualityRequiresRestart() end
 ---**Contexts:** UI
 ---
@@ -748,7 +744,7 @@ function UI.ReleasePauseEvent() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function UI.IsFixedTiltModeOn() end
 ---**Contexts:** UI
 ---
@@ -785,7 +781,7 @@ function UI.DeselectAllCities() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function UI.IsAtMaxSaveCount() end
 ---**Contexts:** UI
 ---
@@ -798,12 +794,12 @@ function UI.DragMap() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function UI.IsFinalRelease() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function UI.IsProcessingMessages() end
 ---**Contexts:** UI
 ---
@@ -825,10 +821,6 @@ function UI.RemoveTemporaryPlotVisibility() end
 ---
 ---*Action*
 function UI.SelectDistrictID() end
----**Contexts:** UI
----
----*Action*
-function UI.PostKeyMessage() end
 ---**Contexts:** UI
 ---
 ---*Action*
@@ -897,3 +889,104 @@ function UI.PlayLeaderAnimation() end
 ---
 ---*Action*
 function UI.SetAmbientTimeOfDay() end
+---**Contexts:** UI
+---
+---*Action*
+function UI.LineUnitUnit() end
+---**Contexts:** UI
+---
+---*Query*
+---@return boolean  
+function UI.IsInterfaceTypeVisibile() end
+---**Contexts:** UI
+---
+---*Action*
+function UI.PartitionPath() end
+---**Contexts:** UI
+---
+---*Action*
+function UI.SelectCityID() end
+---**Contexts:** UI
+---
+---*Query*
+function UI.GetCivilizationSoundSwitchValue() end
+---**Contexts:** UI
+---
+---*Query*
+function UI.IsDistrictSelected() end
+---**Contexts:** UI
+---
+---*Action*
+function UI.TextPlot() end
+---**Contexts:** UI
+---
+---*Query*
+function UI.GetNormalizedScreenPosFromPlotCoord() end
+---**Contexts:** UI
+---
+---*Query*
+function UI.GetAspyrAppVersion() end
+---**Contexts:** UI
+---
+---*Query*
+---@return boolean  
+function UI.IsUnitIDSelected() end
+---**Contexts:** UI
+---
+---*Query*
+function UI.GetWorldZ() end
+---**Contexts:** UI
+---
+---*Query*
+function UI.HexToGrid() end
+---**Contexts:** UI
+---
+---*Action*
+function UI.SetMapZoomCurveModifier() end
+---**Contexts:** UI
+---
+---*Action*
+function UI.SelectPrevUnit() end
+---**Contexts:** UI
+---
+---*Query*
+---@return boolean  
+function UI.IsCitySelected() end
+---**Contexts:** UI
+---
+---*Action*
+function UI.DeselectAllDistricts() end
+---**Contexts:** UI
+---
+---*Query*
+function UI.HexToWorld() end
+---**Contexts:** UI
+---
+---*Action*
+function UI.LookAt() end
+---**Contexts:** UI
+---
+---*Action*
+function UI.SetGamepadCursorPlotID() end
+---**Contexts:** UI
+---
+---*Query*
+---@return boolean  
+function UI.IsAnyInterfaceInGroupVisible() end
+---**Contexts:** UI
+---
+---*Query*
+---@return boolean  
+function UI.IsLeaderAnimated() end
+---**Contexts:** UI
+---
+---*Query*
+function UI.QueryGlobalParameterFloat() end
+---**Contexts:** UI
+---
+---*Action*
+function UI.ToggleMovementPath() end
+---**Contexts:** UI
+---
+---*Action*
+function UI.DeselectDistrictID() end

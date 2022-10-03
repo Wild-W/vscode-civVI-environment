@@ -8,19 +8,19 @@ local PlayerInfluence = {}
 PlayerInfluence.__instances = {}
 ---Name of the object's class; differs between UI and Gameplay context
 PlayerInfluence.TypeName = "PlayerInfluence"
----**Contexts:** Gameplay
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
 function PlayerInfluence:CanGiveInfluence() end
----**Contexts:** Gameplay
+---**Contexts:** UI
 ---
 ---*Query*
 function PlayerInfluence:CanGiveTokensToPlayer() end
----**Contexts:** Gameplay
+---**Contexts:** UI
 ---
 ---*Query*
 function PlayerInfluence:CanLevyMilitary() end
----**Contexts:** Gameplay
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
 function PlayerInfluence:CanReceiveInfluence() end
@@ -28,49 +28,49 @@ function PlayerInfluence:CanReceiveInfluence() end
 ---
 ---*Action*
 function PlayerInfluence:ChangeTokensToGive() end
----**Contexts:** Gameplay
----
----*Query*
-function PlayerInfluence:GetLevyMilitaryCost() end
----**Contexts:** Gameplay
----
----*Query*
-function PlayerInfluence:GetLevyTurnCounter() end
----**Contexts:** Gameplay
----
----*Query*
-function PlayerInfluence:GetLevyTurnLimit() end
----**Contexts:** Gameplay
----
----*Query*
-function PlayerInfluence:GetMostTokensReceived() end
----**Contexts:** Gameplay
----
----*Query*
-function PlayerInfluence:GetPointsEarned() end
----**Contexts:** Gameplay
----
----*Query*
-function PlayerInfluence:GetPointsPerTurn() end
----**Contexts:** Gameplay
----
----*Query*
-function PlayerInfluence:GetPointsThreshold() end
----**Contexts:** Gameplay
----
----*Query*
-function PlayerInfluence:GetSuzerain() end
 ---**Contexts:** UI
 ---
 ---*Query*
-function PlayerInfluence:GetTokensPerThreshold() end
----**Contexts:** Gameplay
+function PlayerInfluence:GetLevyMilitaryCost() end
+---**Contexts:** UI
 ---
 ---*Query*
----@param playerID number
----@return number amount
+function PlayerInfluence:GetLevyTurnCounter() end
+---**Contexts:** UI
+---
+---*Query*
+function PlayerInfluence:GetLevyTurnLimit() end
+---**Contexts:** Gameplay, UI
+---
+---*Query*
+function PlayerInfluence:GetMostTokensReceived() end
+---**Contexts:** Gameplay, UI
+---
+---*Query*
+function PlayerInfluence:GetPointsEarned() end
+---**Contexts:** Gameplay, UI
+---
+---*Query*
+function PlayerInfluence:GetPointsPerTurn() end
+---**Contexts:** Gameplay, UI
+---
+---*Query*
+function PlayerInfluence:GetPointsThreshold() end
+---**Contexts:** Gameplay, UI
+---
+---*Query*
+function PlayerInfluence:GetSuzerain() end
+---**Contexts:** Gameplay, UI
+---
+---*Query*
+function PlayerInfluence:GetTokensPerThreshold() end
+---**Contexts:** Gameplay, UI
+---
+---*Query*
+---@param playerID number 
+---@return number amount 
 function PlayerInfluence:GetTokensReceived(playerID) end
----**Contexts:** Gameplay
+---**Contexts:** Gameplay, UI
 ---
 ---*Query*
 function PlayerInfluence:GetTokensToGive() end
@@ -78,11 +78,11 @@ function PlayerInfluence:GetTokensToGive() end
 ---
 ---*Action*
 function PlayerInfluence:GiveFreeTokenToPlayer() end
----**Contexts:** Gameplay
+---**Contexts:** UI
 ---
 ---*Query*
 function PlayerInfluence:IsGivingTokensConsidered() end
----**Contexts:** Gameplay, UI
+---**Contexts:** UI
 ---
 ---*Query*
 function PlayerInfluence:IsSuzerainUniqueBonusDisabled() end

@@ -22,7 +22,7 @@ function Options.GetAvailableDisplayModes() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Options.IsUIUpscaleAllowed() end
 ---**Contexts:** UI
 ---
@@ -63,7 +63,7 @@ function Options.RevertResolutionChanges() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Options.IsMultiNodeGPU() end
 ---**Contexts:** UI
 ---
@@ -72,7 +72,7 @@ function Options.SetAppOption() end
 ---**Contexts:** UI
 ---
 ---*Query*
----@return boolean
+---@return boolean  
 function Options.IsAppInMainMenuState() end
 ---**Contexts:** UI
 ---
